@@ -72,7 +72,7 @@
       },
       {
         "file": "angular.json",
-        "hash": "11992048326398934745"
+        "hash": "8202775950737519587"
       },
       {
         "file": "ionic.config.json",
@@ -92,7 +92,7 @@
       },
       {
         "file": "src/app/app-routing.module.ts",
-        "hash": "7092203362848417435"
+        "hash": "5025260450384907342"
       },
       {
         "file": "src/app/app.component.html",
@@ -124,7 +124,7 @@
       },
       {
         "file": "src/app/home/home.page.html",
-        "hash": "3668328913015384273"
+        "hash": "17808371988295867290"
       },
       {
         "file": "src/app/home/home.page.scss",
@@ -137,6 +137,126 @@
       {
         "file": "src/app/home/home.page.ts",
         "hash": "1571215977137710084"
+      },
+      {
+        "file": "src/app/pages/forgot-password/forgot-password-routing.module.ts",
+        "hash": "10500165477785471622"
+      },
+      {
+        "file": "src/app/pages/forgot-password/forgot-password.module.ts",
+        "hash": "8250733450243312226"
+      },
+      {
+        "file": "src/app/pages/forgot-password/forgot-password.page.html",
+        "hash": "346118928119264108"
+      },
+      {
+        "file": "src/app/pages/forgot-password/forgot-password.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/forgot-password/forgot-password.page.spec.ts",
+        "hash": "7875805103161277744"
+      },
+      {
+        "file": "src/app/pages/forgot-password/forgot-password.page.ts",
+        "hash": "5178618472244098510"
+      },
+      {
+        "file": "src/app/pages/login/login-routing.module.ts",
+        "hash": "15207053381291759772"
+      },
+      {
+        "file": "src/app/pages/login/login.module.ts",
+        "hash": "17712010613817365668"
+      },
+      {
+        "file": "src/app/pages/login/login.page.html",
+        "hash": "14192822463365354233"
+      },
+      {
+        "file": "src/app/pages/login/login.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/login/login.page.spec.ts",
+        "hash": "11622843872418222859"
+      },
+      {
+        "file": "src/app/pages/login/login.page.ts",
+        "hash": "2975927148748882822"
+      },
+      {
+        "file": "src/app/pages/password-change/password-change-routing.module.ts",
+        "hash": "9014260382581329988"
+      },
+      {
+        "file": "src/app/pages/password-change/password-change.module.ts",
+        "hash": "14961464536564962772"
+      },
+      {
+        "file": "src/app/pages/password-change/password-change.page.html",
+        "hash": "1668775585577835939"
+      },
+      {
+        "file": "src/app/pages/password-change/password-change.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/password-change/password-change.page.spec.ts",
+        "hash": "7520919671846736759"
+      },
+      {
+        "file": "src/app/pages/password-change/password-change.page.ts",
+        "hash": "4091957104411049963"
+      },
+      {
+        "file": "src/app/pages/password-reset-otp/password-reset-otp-routing.module.ts",
+        "hash": "17922179962856846194"
+      },
+      {
+        "file": "src/app/pages/password-reset-otp/password-reset-otp.module.ts",
+        "hash": "17448109761705592414"
+      },
+      {
+        "file": "src/app/pages/password-reset-otp/password-reset-otp.page.html",
+        "hash": "1489174981284326655"
+      },
+      {
+        "file": "src/app/pages/password-reset-otp/password-reset-otp.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/password-reset-otp/password-reset-otp.page.spec.ts",
+        "hash": "65841198110851915"
+      },
+      {
+        "file": "src/app/pages/password-reset-otp/password-reset-otp.page.ts",
+        "hash": "1706306861743178554"
+      },
+      {
+        "file": "src/app/pages/register/register-routing.module.ts",
+        "hash": "6460169682535667979"
+      },
+      {
+        "file": "src/app/pages/register/register.module.ts",
+        "hash": "10972177068596448386"
+      },
+      {
+        "file": "src/app/pages/register/register.page.html",
+        "hash": "15714359170539174158"
+      },
+      {
+        "file": "src/app/pages/register/register.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/pages/register/register.page.spec.ts",
+        "hash": "11091268829114787836"
+      },
+      {
+        "file": "src/app/pages/register/register.page.ts",
+        "hash": "8272490670771145279"
       },
       {
         "file": "src/assets/icon/favicon.png",
