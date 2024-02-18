@@ -92,11 +92,11 @@
       },
       {
         "file": "src/app/app-routing.module.ts",
-        "hash": "5025260450384907342"
+        "hash": "1302727443426679938"
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "12139992690072916112"
+        "hash": "8739100605415615343"
       },
       {
         "file": "src/app/app.component.scss",
@@ -124,7 +124,7 @@
       },
       {
         "file": "src/app/home/home.page.html",
-        "hash": "17808371988295867290"
+        "hash": "8613898143064878269"
       },
       {
         "file": "src/app/home/home.page.scss",
@@ -172,11 +172,11 @@
       },
       {
         "file": "src/app/pages/login/login.page.html",
-        "hash": "14192822463365354233"
+        "hash": "6480462441941288663"
       },
       {
         "file": "src/app/pages/login/login.page.scss",
-        "hash": "3244421341483603138"
+        "hash": "949864323338949239"
       },
       {
         "file": "src/app/pages/login/login.page.spec.ts",
@@ -184,7 +184,7 @@
       },
       {
         "file": "src/app/pages/login/login.page.ts",
-        "hash": "2975927148748882822"
+        "hash": "7739522791145100439"
       },
       {
         "file": "src/app/pages/password-change/password-change-routing.module.ts",
@@ -244,11 +244,11 @@
       },
       {
         "file": "src/app/pages/register/register.page.html",
-        "hash": "15714359170539174158"
+        "hash": "15445701175541728919"
       },
       {
         "file": "src/app/pages/register/register.page.scss",
-        "hash": "3244421341483603138"
+        "hash": "18231413440068440179"
       },
       {
         "file": "src/app/pages/register/register.page.spec.ts",
@@ -256,7 +256,7 @@
       },
       {
         "file": "src/app/pages/register/register.page.ts",
-        "hash": "8272490670771145279"
+        "hash": "11365904089971937830"
       },
       {
         "file": "src/assets/icon/favicon.png",

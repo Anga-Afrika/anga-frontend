@@ -1,13 +1,78 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">login</ion-title>
+<ion-app id="main-content">
+  <ion-header [translucent]="true">
+    <ion-toolbar color="success" >
+      <ion-title>Log In</ion-title>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+  
+  
+  
+  <ion-content class="ion-padding">
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+          <ion-icon name="home-outline"></ion-icon>
+          Home
+        </ion-tab-button>
+        <ion-tab-button tab="radio">
+          <ion-icon name="pulse"></ion-icon>
+          Stream
+        </ion-tab-button>
+        <ion-tab-button tab="library">
+          <ion-icon name="add"></ion-icon>
+          Add
+        </ion-tab-button>
+        <ion-tab-button tab="search">
+          <ion-icon name="cog"></ion-icon>
+          Settings
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    <ion-grid>
+      <ion-row justify-content-center align-items-center>
+        <ion-col size="12" size-sm="8" size-md="6" size-lg="4">
+          <ion-card>
+            <!-- Card content goes here -->
+            <ion-card-header>
+              <ion-card-title></ion-card-title>
+            </ion-card-header>
+        
+            <ion-card-content>
+              <ion-item>
+                <ion-label position="floating">Username (Email)</ion-label>
+                <ion-input type="email" required></ion-input>
+              </ion-item>
+        
+              <ion-item>
+                <ion-label position="floating">
+                  Password</ion-label>
+                  <ng-content></ng-content>
+      <a class="type-toggle" slot="end" (click)="toggleShow()">
+         <ion-icon class="show-option" [hidden]="showPassword" color="success"
+         name="eye-off-outline"></ion-icon>
+         <!-- <ion-icon class="hide-option" [hidden]="!showPassword" name="eye-outline"></ion-icon> -->
+      </a>
+                <ion-input type="password" required></ion-input>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-card>
+      
+    </ion-card>
+
+    <ion-button expand="block" class="login-button" color="success">Login</ion-button>
+    
+    <!-- <ion-button expand="full" [disabled]="!email || !password">Register</ion-button> -->
+    <div class="divider">
+      <ion-label color="medium" class="ion-text-center">Or</ion-label>
+    </div>
+
+    <!-- Have an account? Login -->
+    <ion-label class="ion-text-center">
+      Create an account? <a href="/register">Sign Up</a>
+    </ion-label>
+  </ion-content>
+  

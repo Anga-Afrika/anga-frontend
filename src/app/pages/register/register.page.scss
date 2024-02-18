@@ -1,0 +1,25 @@
+.ion-padding {
+    background-color: greenyellow; /* Example background color */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .profile-picture-area {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .divider {
+    margin: 16px 0;
+    text-align: center;
+  }
+  
+  .divider ion-label {
+    padding: 0 10px;
+    background-color: #f4f4f4;
+    font-size: 14px;
+  }
+  
+  ion-label.ion-text-center {
+    display: block;
+  }

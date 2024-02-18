@@ -5,16 +5,47 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-app id="main-content">
+  <ion-header [translucent]="true">
+    <ion-toolbar color="success" >
+    </ion-toolbar>
+  </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-grid>
-    <ion-row>
-      <ion-col align-self-center>
-        <ion-button [routerLink]="['/register']" expand="block" color="primary">Register</ion-button>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="home-outline"></ion-icon>
+        Home
+      </ion-tab-button>
+      <ion-tab-button tab="radio">
+        <ion-icon name="pulse"></ion-icon>
+        Stream
+      </ion-tab-button>
+      <ion-tab-button tab="library">
+        <ion-icon name="add"></ion-icon>
+        Add
+      </ion-tab-button>
+      <ion-tab-button tab="search">
+        <ion-icon name="cog"></ion-icon>
+        Settings
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+ 
+  <ion-grid class="ion-align-items-center ion-justify-content-center">
+    <ion-row justify-content-center>
+      <ion-col size="12" size-md="8" size-lg="6">
+        <ion-card>
+          <ion-card-content>
+            <ion-button [routerLink]="['/register']" expand="block" >Register</ion-button>
         <span class="divider line one-line">or</span>
         <span class="already">Already a user?</span>
-        <ion-button [routerLink]="['/login']" expand="block" color="danger">Sign In</ion-button>
+        <ion-button [routerLink]="['/login']" expand="block" color="">Sign In</ion-button>
+          </ion-card-content>
+        </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
+
 </ion-content>
