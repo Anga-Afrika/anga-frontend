@@ -40,6 +40,12 @@ export class LoginPage implements OnInit  {
   @ContentChild(IonInput)
   input!: IonInput;
 constructor(private router: Router) {}
+
+login() {
+  //save user details to your backend
+  //navigate to the login page once the user details are saved
+  this.router.navigate(['/dashboard']);
+}
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }

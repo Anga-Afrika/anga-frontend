@@ -25,3 +25,25 @@
 #container a {
   text-decoration: none;
 }
+
+
+body{
+  color:#fff;
+  background:#212121;
+}
+svg{
+  float:right;
+  position:fixed;
+  top:0;
+  right:0;
+}
+ion-toolbar {
+  --background: #FF8911;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}

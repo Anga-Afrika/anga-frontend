@@ -36372,11 +36372,11 @@
       },
       {
         "file": "src/app/app-routing.module.ts",
-        "hash": "3219748255590808867"
+        "hash": "4274169646382709219"
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "8739100605415615343"
+        "hash": "3424913493422141151"
       },
       {
         "file": "src/app/app.component.scss",
@@ -36404,11 +36404,11 @@
       },
       {
         "file": "src/app/home/home.page.html",
-        "hash": "11367615689600449148"
+        "hash": "10002957098587360016"
       },
       {
         "file": "src/app/home/home.page.scss",
-        "hash": "14250411118003398491"
+        "hash": "11623173706459450501"
       },
       {
         "file": "src/app/home/home.page.spec.ts",
@@ -36417,6 +36417,102 @@
       {
         "file": "src/app/home/home.page.ts",
         "hash": "1571215977137710084"
+      },
+      {
+        "file": "src/app/lib/dashboard/dashboard-routing.module.ts",
+        "hash": "17539954454289649274"
+      },
+      {
+        "file": "src/app/lib/dashboard/dashboard.module.ts",
+        "hash": "1729686176567888049"
+      },
+      {
+        "file": "src/app/lib/dashboard/dashboard.page.html",
+        "hash": "294643847346644064"
+      },
+      {
+        "file": "src/app/lib/dashboard/dashboard.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/lib/dashboard/dashboard.page.spec.ts",
+        "hash": "15860121979940362694"
+      },
+      {
+        "file": "src/app/lib/dashboard/dashboard.page.ts",
+        "hash": "13336687465604128618"
+      },
+      {
+        "file": "src/app/lib/readings/readings-routing.module.ts",
+        "hash": "1959732842318318797"
+      },
+      {
+        "file": "src/app/lib/readings/readings.module.ts",
+        "hash": "15091416535972401671"
+      },
+      {
+        "file": "src/app/lib/readings/readings.page.html",
+        "hash": "8631224155802465555"
+      },
+      {
+        "file": "src/app/lib/readings/readings.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/lib/readings/readings.page.spec.ts",
+        "hash": "16865895729625930203"
+      },
+      {
+        "file": "src/app/lib/readings/readings.page.ts",
+        "hash": "3203618822105702714"
+      },
+      {
+        "file": "src/app/lib/settings/settings-routing.module.ts",
+        "hash": "4281079896590944680"
+      },
+      {
+        "file": "src/app/lib/settings/settings.module.ts",
+        "hash": "578571550930626449"
+      },
+      {
+        "file": "src/app/lib/settings/settings.page.html",
+        "hash": "1667356301781047247"
+      },
+      {
+        "file": "src/app/lib/settings/settings.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/lib/settings/settings.page.spec.ts",
+        "hash": "3575514068453099711"
+      },
+      {
+        "file": "src/app/lib/settings/settings.page.ts",
+        "hash": "11378545068810751355"
+      },
+      {
+        "file": "src/app/lib/storage/storage-routing.module.ts",
+        "hash": "14027878241935391075"
+      },
+      {
+        "file": "src/app/lib/storage/storage.module.ts",
+        "hash": "601986302794066360"
+      },
+      {
+        "file": "src/app/lib/storage/storage.page.html",
+        "hash": "17851071126667433876"
+      },
+      {
+        "file": "src/app/lib/storage/storage.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/lib/storage/storage.page.spec.ts",
+        "hash": "17621028985899985833"
+      },
+      {
+        "file": "src/app/lib/storage/storage.page.ts",
+        "hash": "13030885997104941777"
       },
       {
         "file": "src/app/login-pages/forgot-password/forgot-password-routing.module.ts",
@@ -36452,11 +36548,11 @@
       },
       {
         "file": "src/app/login-pages/login/login.page.html",
-        "hash": "6480462441941288663"
+        "hash": "11778700980421612694"
       },
       {
         "file": "src/app/login-pages/login/login.page.scss",
-        "hash": "949864323338949239"
+        "hash": "14366365504012883335"
       },
       {
         "file": "src/app/login-pages/login/login.page.spec.ts",
@@ -36524,11 +36620,11 @@
       },
       {
         "file": "src/app/login-pages/register/register.page.html",
-        "hash": "9654925887261084433"
+        "hash": "2148404361466826438"
       },
       {
         "file": "src/app/login-pages/register/register.page.scss",
-        "hash": "16727929988540384455"
+        "hash": "15425728982152060961"
       },
       {
         "file": "src/app/login-pages/register/register.page.spec.ts",
@@ -36537,10 +36633,6 @@
       {
         "file": "src/app/login-pages/register/register.page.ts",
         "hash": "10168436759663155755"
-      },
-      {
-        "file": "src/app/pages/password-change/password-change.page.spec.ts",
-        "hash": "12100210497412652269"
       },
       {
         "file": "src/assets/icon/favicon.png",

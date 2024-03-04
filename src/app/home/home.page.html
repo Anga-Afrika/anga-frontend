@@ -9,40 +9,105 @@
 
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home" [routerLink]="['/register']">
-        <ion-icon name="home-outline" ></ion-icon>
-        Home
-      </ion-tab-button>
-      <ion-tab-button tab="radio">
-        <ion-icon name="pulse"></ion-icon>
-        Stream
-      </ion-tab-button>
-      <ion-tab-button tab="library">
-        <ion-icon name="add"></ion-icon>
-        Add
-      </ion-tab-button>
-      <ion-tab-button tab="search">
-        <ion-icon name="cog"></ion-icon>
-        Settings
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300" fill="#FF8911">
+    <style>
+      circle{
+        animation-duration: 5s;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count:infinite;
+      }
+      #one{animation-name: one;}
+      #two{animation-name: two;}
+      #three{animation-name: three;}
+      #four{animation-name: four;}
+      #five{animation-name: five;}
+      #six{animation-name: six;}
+      @keyframes one{
+        0%{transform:translate(0,0)}
+        50%{transform:translate(10px,10px)}
+        0%{transform:translate(0,0)}
+      }
+      @keyframes two{
+        0%{transform:translate(0,0)}
+        50%{transform:translate(-15px,5px)}
+        0%{transform:translate(0,0)}
+      }
+      @keyframes three{
+        0%{transform:translate(0,0)}
+        50%{transform:translate(17px,7px)}
+        0%{transform:translate(0,0)}
+      }
+      @keyframes four{
+        0%{transform:translate(0,0)}
+        50%{transform:translate(5px,-20px)}
+        0%{transform:translate(0,0)}
+      }
+      @keyframes three{
+        0%{transform:translate(0,0)}
+        50%{transform:translate(17px,7px)}
+        0%{transform:translate(0,0)}
+      }
+      @keyframes five{
+        0%{transform:translate(0,0)}
+        50%{transform:translate(0,5px)}
+        0%{transform:translate(0,0)}
+      }
+      @keyframes six{
+        0%{transform:translate(0,0)}
+        50%{transform:translate(20px,-5px)}
+        0%{transform:translate(0,0)}
+      }
+    </style>
+    <defs>
+      <filter id="goo">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -12" result="goo" />
+    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+  </filter>
+    </defs>
+    <g filter="url('#goo')">
+      <circle cx="400" cy="0" r="250"/>
+      <circle id="one" cx="110" cy="30" r="80"/>
+      <circle id="two" cx="110" cy="120" r="30"/>
+      <circle id="three" cx="170" cy="130" r="60"/>
+      <circle id="four" cx="225" cy="165" r="50"/>
+      <circle id="five" cx="270" cy="200" r="30"/>
+      <circle id="six" cx="370" cy="190" r="90"/>
+    </g>
+  </svg>
  
-  <ion-grid class="ion-align-items-center ion-justify-content-center">
+  <!-- <ion-grid>
     <ion-row justify-content-center>
       <ion-col size="12" size-md="8" size-lg="6">
         <ion-card>
           <ion-card-content>
-            <ion-button [routerLink]="['/register']" expand="block" >Register</ion-button>
+            <ion-button [routerLink]="['/register']" expand="block" color="#006400">Register</ion-button>
         <span class="divider line one-line">or</span>
         <span class="already">Already a user?</span>
-        <ion-button [routerLink]="['/login']" expand="block" color="">Sign In</ion-button>
+        <ion-button [routerLink]="['/login']" expand="block" color="#006400">Sign In</ion-button>
           </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
-  </ion-grid>
+  </ion-grid> -->
 
+  <div class="container">
+    <ion-grid class="ion-padding">
+      <ion-row justify-content-center>
+        <ion-col size="12" size-md="8" size-lg="6">
+          <ion-card>
+            <ion-card-content>
+              <ion-button [routerLink]="['/register']" expand="block" color="#006400">Register</ion-button>
+          <span class="divider line one-line">or</span>
+          <span class="already">Already a user?</span>
+          <ion-button [routerLink]="['/login']" expand="block" color="#006400">Sign In</ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+  </div>
+
+  
 </ion-content>

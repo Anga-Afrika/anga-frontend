@@ -1,6 +1,12 @@
-.login-button {
-    background-color: black; /* Example background color */
+ 
+  ion-toolbar {
+    --background: #FF8911;
+  }
+
+  .login-button {
+    background-color: #FF8911; 
     color: white;
     font-weight: bold;
   }
+  
   

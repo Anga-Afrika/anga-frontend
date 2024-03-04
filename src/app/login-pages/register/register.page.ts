@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-register',
@@ -11,7 +12,7 @@ export class RegisterPage  {
   email: string | undefined;
   password: string | undefined;
 
-  constructor( private http:HttpClient ) { }
+  constructor( private http:HttpClient, private router: Router ) { }
 
   passwordType: string = 'password';
   passwordIcon: string = 'eye-off';
@@ -19,6 +20,12 @@ export class RegisterPage  {
   hideShowPassword() {
       this.passwordType = this.passwordType === 'text' ? 'password' : 'text';
       this.passwordIcon = this.passwordIcon === 'eye-off' ? 'eye' : 'eye-off';
+  }
+
+  register() {
+    //save user details to your backend
+    //navigate to the login page once the user details are saved
+    this.router.navigate(['/login']);
   }
  
   obj:any;

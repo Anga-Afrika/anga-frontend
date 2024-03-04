@@ -1,33 +1,19 @@
 <ion-app id="main-content">
   <ion-header [translucent]="true">
-    <ion-toolbar color="success" >
+    <ion-toolbar>
       <ion-title>Log In</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button slot="start" fill="solid" class="button-back" defaultHref="/home">
+          <ion-icon name="chevron-back"></ion-icon>
+        </ion-back-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
   
   
   
   <ion-content class="ion-padding">
-    <ion-tabs>
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="home">
-          <ion-icon name="home-outline"></ion-icon>
-          Home
-        </ion-tab-button>
-        <ion-tab-button tab="radio">
-          <ion-icon name="pulse"></ion-icon>
-          Stream
-        </ion-tab-button>
-        <ion-tab-button tab="library">
-          <ion-icon name="add"></ion-icon>
-          Add
-        </ion-tab-button>
-        <ion-tab-button tab="search">
-          <ion-icon name="cog"></ion-icon>
-          Settings
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
+    
     <ion-grid>
       <ion-row justify-content-center align-items-center>
         <ion-col size="12" size-sm="8" size-md="6" size-lg="4">
@@ -63,7 +49,7 @@
       
     </ion-card>
 
-    <ion-button expand="block" class="login-button" color="success">Login</ion-button>
+    <ion-button expand="block" class="login-button" (click)="login()">Login</ion-button>
     
     <!-- <ion-button expand="full" [disabled]="!email || !password">Register</ion-button> -->
     <div class="divider">

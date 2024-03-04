@@ -1,76 +1,25 @@
-<!-- <ion-app id="main-content">
-<ion-header [translucent]="true">
-  <ion-toolbar color="success" >
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/home"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Sign Up</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-
-
-<ion-content padding>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title></ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content>
-      <ion-item>
-        <ion-label position="floating">Username (Email)</ion-label>
-        <ion-input type="email"></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating">Password</ion-label>
-        <ion-input [type]="passwordType" clearOnEdit="false"></ion-input>
-    <ion-icon item-end [name]="passwordIcon" class="passwordIcon" ></ion-icon>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
-
-  <ion-button expand="full" [disabled]="!email || !password">Register</ion-button>
-</ion-content> -->
-
 <ion-app id="main-content">
   <ion-header [translucent]="true">
-    <ion-toolbar color="success" >
+    <ion-toolbar>
       <ion-buttons slot="start">
-        <ion-back-button defaultHref="/home"></ion-back-button>
+        <ion-back-button slot="start" fill="solid" class="button-back" defaultHref="/home">
+          <ion-icon name="chevron-back"></ion-icon>
+        </ion-back-button>
       </ion-buttons>
-      <ion-title>Sign Up</ion-title>
+      <ion-title text-center></ion-title>
       <ion-buttons slot="end">
-        <ion-button tab="radio">
-          <ion-icon name="notifications" size="medium"></ion-icon>
+        <ion-button tab="alerts" style="position: relative;">
+          <ion-icon name="notifications"size="large"></ion-icon>
+          <ion-badge>2</ion-badge>
         </ion-button>
             </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-<h3>{{obj}}</h3>
+<!-- <h3>{{obj}}</h3> -->
 
 <ion-content class="ion-padding">
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home">
-        <ion-icon name="home-outline"></ion-icon>
-        Home
-      </ion-tab-button>
-      <ion-tab-button tab="radio">
-        <ion-icon name="pulse"></ion-icon>
-        Stream
-      </ion-tab-button>
-      <ion-tab-button tab="library">
-        <ion-icon name="add"></ion-icon>
-        Add
-      </ion-tab-button>
-      <ion-tab-button tab="search">
-        <ion-icon name="cog"></ion-icon>
-        Settings
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+  
   <ion-grid>
     <ion-row justify-content-center>
       <ion-col size="12" size-md="6">
@@ -116,12 +65,11 @@
   </ion-grid>
 
   <div class="divider">
-    <ion-button expand="block" color="success">Create</ion-button>
+    <ion-button expand="block" class="register-button" color="#FF8911" (click)="register()">Sign Up</ion-button>
   </div>
 
-  <div class="divider">
+
     <ion-label color="medium" class="ion-text-center">Or</ion-label>
-  </div>
 
   <ion-label class="ion-text-center">
     Have an account? <a href="/login">Login</a>
