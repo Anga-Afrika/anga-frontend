@@ -1,13 +1,36 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>dashboard</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-app id="main-content">
+  <ion-header [translucent]="true">
     <ion-toolbar>
-      <ion-title size="large">dashboard</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button slot="start" fill="solid" class="button-back" defaultHref="/home">
+          <ion-icon name="chevron-back"></ion-icon>
+        </ion-back-button>
+      </ion-buttons>
+      <ion-title text-center></ion-title>
+      <ion-buttons slot="end">
+        <ion-button tab="alerts" style="position: relative;">
+          <ion-icon name="notifications"size="large"></ion-icon>
+          <ion-badge>2</ion-badge>
+        </ion-button>
+            </ion-buttons>
     </ion-toolbar>
   </ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="dashboard">
+    <h1>Welcome, {{ userName }}</h1>
+    <div class="statistics-cards">
+      <div class="card">
+        <div class="card-content">
+          <h2>Number of Warehouses</h2>
+          <p>{{ numberOfWarehouses }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <ion-button (click)="logout()">Logout</ion-button>
 </ion-content>
+</ion-app>
+
+

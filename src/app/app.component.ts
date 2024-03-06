@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { AuthService } from "./lib/services/auth/auth.service";
 
 
 @Component({
@@ -8,5 +9,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private authService: AuthService) {}
+
+  isAuthenticated(): boolean {
+    return this.authService.isAuthenticated();
+  }
 }

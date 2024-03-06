@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { LoginPage } from './login-pages/login/login.page';
-import { RegisterPage } from './login-pages/register/register.page';
+import { LoginPage } from './lib/login-pages/login/login.page';
+import { RegisterPage } from './lib/login-pages/register/register.page';
 
 const routes: Routes = [
   { path: 'login', component: LoginPage },
@@ -17,21 +17,25 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  { path: 'register', component: RegisterPage },
+  { path: 'login', component: LoginPage },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+
   {
     path: 'login',
-    loadChildren: () => import('./login-pages/login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./lib/login-pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: 'forgot-password',
-    loadChildren: () => import('./login-pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+    loadChildren: () => import('./lib/login-pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
   {
     path: 'password-change',
-    loadChildren: () => import('./login-pages/password-change/password-change.module').then( m => m.PasswordChangePageModule)
+    loadChildren: () => import('./lib/login-pages/password-change/password-change.module').then( m => m.PasswordChangePageModule)
   },
   {
     path: 'register',
-    loadChildren: () => import('./login-pages/register/register.module').then( m => m.RegisterPageModule)
+    loadChildren: () => import('./lib/login-pages/register/register.module').then( m => m.RegisterPageModule)
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },   {
     path: 'dashboard',

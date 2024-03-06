@@ -1,13 +1,121 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>readings</ion-title>
-  </ion-toolbar>
-</ion-header>
+  <ion-app id="main-content">
+    <ion-header mode="ios">
+      <ion-toolbar> 
+        <ion-buttons slot="start">
+          <ion-back-button slot="start" fill="solid" class="button-back" defaultHref="/dashboard">
+            <ion-icon name="chevron-back"></ion-icon>
+          </ion-back-button>
+        </ion-buttons> 
+        <ion-buttons slot="end">
+          <ion-button tab="alerts" style="position: relative;">
+            <ion-icon name="notifications"size="large"></ion-icon>
+            <ion-badge>2</ion-badge>
+          </ion-button>
+              </ion-buttons>
+       </ion-toolbar>
+    </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">readings</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+
+  <ion-content class="ion-padding">
+    <ion-router-outlet></ion-router-outlet>
+
+    <span><ion-list>
+      <ion-item>
+        <p>Filter Options</p>
+      </ion-item>
+    </ion-list>
+
+    <ion-item>
+      <ion-label>Warehouse:</ion-label>
+      <ion-select interface="popover">
+        <ion-select-option>
+          warehouse 
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item >
+      <ion-label>Compartment:</ion-label>
+      <ion-select  interface="popover">
+        <ion-select-option >
+          compartment 
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sensor ID:</ion-label>
+      <ion-select  interface="popover">
+        <ion-select-option >
+          sensorID 
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <p>selectedWarehouse, selectedCompartment, selectedSensorID</p>
+    </ion-item>
+    <ion-card class="card1" color="">
+      <ion-card-content>
+        <h3><ion-icon name=""></ion-icon> Current Humidity:
+          
+        </h3>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="card2" color="">
+      <ion-card-content>
+        <h3><ion-icon name=""></ion-icon> Current Temperature:
+        </h3>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="currentStatus" color="">
+      <ion-card-content>
+        <h3>Current Status:
+          </h3>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button expand="block" fill="outline" color="#FF8911" >Click to monitor sensor
+      data</ion-button>
+    <ion-grid>
+          <ion-card class="charts" color="">
+            <ion-card-title></ion-card-title>
+            <ion-card-subtitle>
+              <ion-icon name="" size="large"></ion-icon>Humidity
+            </ion-card-subtitle>
+            <ion-card-content>
+              <div class="pie">
+
+              </div>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card class="charts" color="">
+            <ion-card-title></ion-card-title>
+            <ion-card-subtitle>
+              <ion-icon name="" size="large"></ion-icon>Temperature
+            </ion-card-subtitle>
+            <ion-card-content>
+              <div class="pie">
+
+              </div>
+            </ion-card-content>
+          </ion-card>
+
+      <ion-card class="temp" color="">
+        <ion-card-header>
+          <ion-card-title></ion-card-title>
+          <ion-card-subtitle>Graph</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="line"></div>
+        </ion-card-content>
+
+      </ion-card>
+    </ion-grid>
+    
+
+
+
+

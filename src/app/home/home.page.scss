@@ -37,9 +37,6 @@ svg{
   top:0;
   right:0;
 }
-ion-toolbar {
-  --background: #FF8911;
-}
 
 .container {
   display: flex;
@@ -47,3 +44,51 @@ ion-toolbar {
   align-items: center;
   height: 100vh; /* Adjust as needed */
 }
+.login-button {
+  background-color: #FF8911; 
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.register-button {
+  background-color: #FF8911; 
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+}
+  // header
+  ion-header {
+    ion-toolbar {
+      --background: transparent;
+      --border-style: none;
+      --min-height: 80px;
+      padding: 0 15px;
+    }
+  }
+  
+  // content
+ion-content {
+  --background: #fff;
+  --color: #6a6a6a;
+}
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set container height to 100% of viewport height */
+  }
+  
+  .already {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin below "Already a user?" text */
+    color: #333; /* Set text color */
+  }
+
+      ion-text {
+          font-size: 5rem;
+          font-weight: 600;
+          color: #fff;
+        }
+        
