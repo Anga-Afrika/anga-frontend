@@ -1,0 +1,53 @@
+<ion-app id="main-content">
+  <ion-header mode="ios">
+    <ion-toolbar>
+      <!-- <ion-buttons slot="start">
+        <ion-back-button slot="start" fill="solid" class="button-back" defaultHref="/home">
+          <ion-icon name="chevron-back"></ion-icon>
+        </ion-back-button>
+      </ion-buttons> -->
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  
+  <ion-content [fullscreen]="true" class="ion-padding">
+    <div class="container">
+    <div class="grid-container">
+      <ion-card>
+        <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" required></ion-input>
+      </ion-item>
+  </ion-card-content>
+</ion-card>
+  </div>
+    <div class="grid-container">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+        <div class="divider">
+          <ion-button type="submit" expand="block" class="login-button" color="#FF8911" (click)="login(); navigateToDashboard()">Login</ion-button>
+        </div>
+    
+        <div class="divider">
+          <ion-label class="ion-text-center" routerLink="/forgot-password">Forgot Password?</ion-label>
+        </div>
+    
+        
+        <ion-label class="ion-text-center">
+          Not Registered? <a href="/register">Sign Up</a>
+        </ion-label>
+        </ion-col>
+      </ion-row>
+      </ion-grid>
+    </div>
+</div>
+  </ion-content>
+
+  

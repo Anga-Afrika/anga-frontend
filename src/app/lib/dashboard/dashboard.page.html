@@ -1,3 +1,41 @@
+<<<<<<< HEAD
+<ion-app id="main-content">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button slot="start" fill="solid" class="button-back" defaultHref="/home">
+          <ion-icon name="chevron-back"></ion-icon>
+        </ion-back-button>
+      </ion-buttons>
+      <ion-title text-center></ion-title>
+      <ion-buttons slot="end">
+        <ion-button tab="alerts" style="position: relative;">
+          <ion-icon name="notifications"size="large"></ion-icon>
+          <ion-badge>2</ion-badge>
+        </ion-button>
+            </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="dashboard">
+    <h1>Welcome, {{ userName }}</h1>
+    <div class="statistics-cards">
+      <div class="card">
+        <div class="card-content">
+          <h2>Number of Warehouses</h2>
+          <p>{{ numberOfWarehouses }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <ion-button (click)="logout()">Logout</ion-button>
+</ion-content>
+</ion-app>
+
+
+=======
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>dashboard</ion-title>
@@ -11,3 +49,4 @@
     </ion-toolbar>
   </ion-header>
 </ion-content>
+>>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
