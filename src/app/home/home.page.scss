@@ -37,6 +37,12 @@ svg{
   top:0;
   right:0;
 }
+<<<<<<< HEAD
+=======
+ion-toolbar {
+  --background: #FF8911;
+}
+>>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
 
 .container {
   display: flex;
@@ -44,6 +50,7 @@ svg{
   align-items: center;
   height: 100vh; /* Adjust as needed */
 }
+<<<<<<< HEAD
 .login-button {
   background-color: #FF8911; 
   color: white;
@@ -92,3 +99,5 @@ ion-content {
           color: #fff;
         }
         
+=======
+>>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
