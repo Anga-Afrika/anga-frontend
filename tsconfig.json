@@ -10,10 +10,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-<<<<<<< HEAD
     "noImplicitAny": false,
-=======
->>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
