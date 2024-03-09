@@ -1,15 +1,11 @@
-<ion-app id="main-content">
-  <ion-header mode="ios">
-    <ion-toolbar>
-      <!-- <ion-buttons slot="start">
-        <ion-back-button slot="start" fill="solid" class="button-back" defaultHref="/home">
-          <ion-icon name="chevron-back"></ion-icon>
-        </ion-back-button>
-      </ion-buttons> -->
-    </ion-toolbar>
+<ion-header mode="ios">
+  <ion-toolbar>
+  <ion-title class="title-color">
+  Trackr.
+  </ion-title>
+  </ion-toolbar>
   </ion-header>
-  
-  
+  <ion-app id="main-content">
   
   <ion-content [fullscreen]="true" class="ion-padding">
     <div class="container">
@@ -37,12 +33,11 @@
     
         <div class="divider">
           <ion-label class="ion-text-center" routerLink="/forgot-password">Forgot Password?</ion-label>
-        </div>
-    
         
-        <ion-label class="ion-text-center">
-          Not Registered? <a href="/register">Sign Up</a>
+        <ion-label class="ion-text-center" routerLink="/register">
+          Create an account 
         </ion-label>
+      </div>
         </ion-col>
       </ion-row>
       </ion-grid>

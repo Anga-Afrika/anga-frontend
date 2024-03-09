@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data/data.service'; // Import your data service
-import { AuthService } from 'src/app/lib/services/auth/auth.service';
+import { AuthService } from '../services/auth/auth.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -28,3 +28,4 @@ export class DashboardPage implements OnInit {
     // Fetch other statistics data
   }
 }
+

@@ -1,25 +1,21 @@
-<ion-app id="main-content">
-  <ion-header mode="ios">
-    <!-- <ion-toolbar> -->
-      <!-- <ion-buttons slot="start">
-        <ion-back-button slot="start" fill="solid" class="button-back" defaultHref="/home">
-          <ion-icon name="chevron-back"></ion-icon>
-        </ion-back-button>
-      </ion-buttons> -->
-    <!-- </ion-toolbar> -->
+<ion-header mode="ios">
+  <ion-toolbar>
+  <ion-title class="title-color">
+  Trackr.
+  </ion-title>
+  </ion-toolbar>
   </ion-header>
-  
 
-<!-- <h3>{{obj}}</h3> -->
+<ion-app id="main-content">
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <div class="container">
-  <div class="grid-container">
+  <div class="container" color="#508D69">
+  <div class="grid-container" color="#508D69">
     <form (ngSubmit)="onSubmit()">
-  <ion-grid>
+  <ion-grid color="#508D69">
     <ion-row justify-content-center>
       <ion-col size="12">
-        <ion-card>
+        <ion-card class="card-color">
           <ion-card-content>
             <div class="profile-picture-area">
               <ion-icon name="person-circle-outline" size="large"></ion-icon>
@@ -56,7 +52,7 @@
     <ion-label color="medium" class="ion-text-center">Or</ion-label>
 
   <ion-label class="ion-text-center">
-    Have an account? <a href="/login">Login</a>
+    Already have an account? <a href="/login">Login</a>
   </ion-label>
 </div>
 </div>

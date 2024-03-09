@@ -1,41 +1,6 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-
 body{
   color:#fff;
   background:#212121;
-}
-svg{
-  float:right;
-  position:fixed;
-  top:0;
-  right:0;
 }
 
 .container {
@@ -45,16 +10,16 @@ svg{
   height: 100vh; /* Adjust as needed */
 }
 .login-button {
-  background-color: #FF8911; 
+  background-color: #508D69; 
   color: white;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .register-button {
-  background-color: #FF8911; 
+  background-color: #508D69; 
   color: white;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 5px;
 }
   // header
   ion-header {
@@ -72,13 +37,6 @@ ion-content {
   --color: #6a6a6a;
 }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Set container height to 100% of viewport height */
-  }
-  
   .already {
     display: block;
     text-align: center;
@@ -92,3 +50,6 @@ ion-content {
           color: #fff;
         }
         
+.title-color {
+  color:#508D69;
+}
