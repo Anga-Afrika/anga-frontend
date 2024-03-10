@@ -49,6 +49,7 @@
       {
         "file": ".browserslistrc",
         "hash": "7979060078399394427"
+<<<<<<< HEAD
       },
       {
         "file": ".editorconfig",
@@ -36053,306 +36054,32 @@
       {
         "file": "backend/venv2/Lib/site-packages/urllib3/__pycache__/connectionpool.cpython-312.pyc",
         "hash": "15805169945772836217"
+=======
+>>>>>>> main
       },
       {
-        "file": "backend/venv2/Lib/site-packages/urllib3/__pycache__/exceptions.cpython-312.pyc",
-        "hash": "11088073566636533298"
+        "file": ".editorconfig",
+        "hash": "6686520031028425313"
       },
       {
-        "file": "backend/venv2/Lib/site-packages/urllib3/__pycache__/fields.cpython-312.pyc",
-        "hash": "18187012834693111840"
+        "file": ".eslintrc.json",
+        "hash": "18210278994710539225"
       },
       {
-        "file": "backend/venv2/Lib/site-packages/urllib3/__pycache__/filepost.cpython-312.pyc",
-        "hash": "12995725871480809450"
+        "file": ".gitignore",
+        "hash": "91109559695469517"
       },
       {
-        "file": "backend/venv2/Lib/site-packages/urllib3/__pycache__/http2.cpython-312.pyc",
-        "hash": "4558955727267398260"
+        "file": ".vscode/extensions.json",
+        "hash": "592272277800690021"
       },
       {
-        "file": "backend/venv2/Lib/site-packages/urllib3/__pycache__/poolmanager.cpython-312.pyc",
-        "hash": "14477086446446493084"
+        "file": ".vscode/settings.json",
+        "hash": "1151538777131426085"
       },
       {
-        "file": "backend/venv2/Lib/site-packages/urllib3/__pycache__/response.cpython-312.pyc",
-        "hash": "8754541047237237544"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/_base_connection.py",
-        "hash": "7024252768116472118"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/_collections.py",
-        "hash": "10679945617071204528"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/_request_methods.py",
-        "hash": "805863146820645823"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/_version.py",
-        "hash": "4392177556881792722"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/connection.py",
-        "hash": "5816605158223615506"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/connectionpool.py",
-        "hash": "16754855657418908707"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/__init__.py",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/__pycache__/__init__.cpython-312.pyc",
-        "hash": "17824944831713842983"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/__pycache__/pyopenssl.cpython-312.pyc",
-        "hash": "18226658679084125406"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/__pycache__/socks.cpython-312.pyc",
-        "hash": "9300334188404471275"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/emscripten/__init__.py",
-        "hash": "7212527348964542359"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/emscripten/__pycache__/__init__.cpython-312.pyc",
-        "hash": "11233429125392373995"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/emscripten/__pycache__/connection.cpython-312.pyc",
-        "hash": "8030248568167822600"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/emscripten/__pycache__/fetch.cpython-312.pyc",
-        "hash": "5985377934367237020"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/emscripten/__pycache__/request.cpython-312.pyc",
-        "hash": "14597459341682269332"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/emscripten/__pycache__/response.cpython-312.pyc",
-        "hash": "12836738251196124942"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/emscripten/connection.py",
-        "hash": "7743634190538834711"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/emscripten/emscripten_fetch_worker.js",
-        "hash": "6533895161871301987"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/emscripten/fetch.py",
-        "hash": "16193243798420261327"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/emscripten/request.py",
-        "hash": "15805403198010296121"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/emscripten/response.py",
-        "hash": "4247527396629443375"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/pyopenssl.py",
-        "hash": "17765476718326567713"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/contrib/socks.py",
-        "hash": "5978901777714159365"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/exceptions.py",
-        "hash": "6802960282473600510"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/fields.py",
-        "hash": "17023356237067316119"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/filepost.py",
-        "hash": "14578763225459858543"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/http2.py",
-        "hash": "9792578869052241051"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/poolmanager.py",
-        "hash": "12133798531785985739"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/py.typed",
-        "hash": "7300591491423564534"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/response.py",
-        "hash": "3257752694529317988"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__init__.py",
-        "hash": "4627485755457563480"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/__init__.cpython-312.pyc",
-        "hash": "13797821395349563599"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/connection.cpython-312.pyc",
-        "hash": "13574372114562967605"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/proxy.cpython-312.pyc",
-        "hash": "17651997476974953675"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/request.cpython-312.pyc",
-        "hash": "16561435163372251934"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/response.cpython-312.pyc",
-        "hash": "7223755204143267452"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/retry.cpython-312.pyc",
-        "hash": "17172063167524782163"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/ssl_.cpython-312.pyc",
-        "hash": "6163709694729479846"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/ssl_match_hostname.cpython-312.pyc",
-        "hash": "3193655811747301911"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/ssltransport.cpython-312.pyc",
-        "hash": "17775679575567138364"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/timeout.cpython-312.pyc",
-        "hash": "13939841641136890285"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/url.cpython-312.pyc",
-        "hash": "18279270402324253351"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/util.cpython-312.pyc",
-        "hash": "5311348381203401616"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/__pycache__/wait.cpython-312.pyc",
-        "hash": "3474780221801297004"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/connection.py",
-        "hash": "16775612845631726955"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/proxy.py",
-        "hash": "9986940020179865018"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/request.py",
-        "hash": "10990254212858598460"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/response.py",
-        "hash": "15319183494203747558"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/retry.py",
-        "hash": "14792479730246162868"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/ssl_.py",
-        "hash": "17860636823663870428"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/ssl_match_hostname.py",
-        "hash": "954836602288359902"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/ssltransport.py",
-        "hash": "9744348759087125313"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/timeout.py",
-        "hash": "8303984303315536024"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/url.py",
-        "hash": "4473206008678568713"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/util.py",
-        "hash": "5915679280913136876"
-      },
-      {
-        "file": "backend/venv2/Lib/site-packages/urllib3/util/wait.py",
-        "hash": "14723165193850927159"
-      },
-      {
-        "file": "backend/venv2/Scripts/Activate.ps1",
-        "hash": "4847337772101460436"
-      },
-      {
-        "file": "backend/venv2/Scripts/activate",
-        "hash": "2184883259783610077"
-      },
-      {
-        "file": "backend/venv2/Scripts/activate.bat",
-        "hash": "7763156156373517117"
-      },
-      {
-        "file": "backend/venv2/Scripts/deactivate.bat",
-        "hash": "11112908687037037252"
-      },
-      {
-        "file": "backend/venv2/Scripts/django-admin.exe",
-        "hash": "14204870354512697767"
-      },
-      {
-        "file": "backend/venv2/Scripts/normalizer.exe",
-        "hash": "10389415587780263506"
-      },
-      {
-        "file": "backend/venv2/Scripts/pip.exe",
-        "hash": "2489938010329205560"
-      },
-      {
-        "file": "backend/venv2/Scripts/pip3.12.exe",
-        "hash": "2489938010329205560"
-      },
-      {
-        "file": "backend/venv2/Scripts/pip3.exe",
-        "hash": "2489938010329205560"
-      },
-      {
-        "file": "backend/venv2/Scripts/python.exe",
-        "hash": "7497605051751429130"
-      },
-      {
-        "file": "backend/venv2/Scripts/pythonw.exe",
-        "hash": "1235150032001983102"
-      },
-      {
-        "file": "backend/venv2/Scripts/sqlformat.exe",
-        "hash": "15873216120864223032"
-      },
-      {
-        "file": "backend/venv2/pyvenv.cfg",
-        "hash": "3852526321620647334"
+        "file": "angular.json",
+        "hash": "8202775950737519587"
       },
       {
         "file": "ionic.config.json",
@@ -36364,11 +36091,7 @@
       },
       {
         "file": "package-lock.json",
-<<<<<<< HEAD
-        "hash": "4949576108658912931"
-=======
-        "hash": "9580281434768023306"
->>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
+        "hash": "10647072369963887146"
       },
       {
         "file": "package.json",
@@ -36376,19 +36099,11 @@
       },
       {
         "file": "src/app/app-routing.module.ts",
-<<<<<<< HEAD
         "hash": "14513939286121695881"
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "9082892695689595074"
-=======
-        "hash": "4274169646382709219"
-      },
-      {
-        "file": "src/app/app.component.html",
-        "hash": "3424913493422141151"
->>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
+        "hash": "8059541647665778841"
       },
       {
         "file": "src/app/app.component.scss",
@@ -36400,19 +36115,11 @@
       },
       {
         "file": "src/app/app.component.ts",
-<<<<<<< HEAD
         "hash": "8407997828494117431"
       },
       {
         "file": "src/app/app.module.ts",
         "hash": "13257609706150873997"
-=======
-        "hash": "15647262627723644410"
-      },
-      {
-        "file": "src/app/app.module.ts",
-        "hash": "10565052670747655211"
->>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
       },
       {
         "file": "src/app/home/home-routing.module.ts",
@@ -36424,19 +36131,11 @@
       },
       {
         "file": "src/app/home/home.page.html",
-<<<<<<< HEAD
-        "hash": "17928311516730413918"
+        "hash": "261992556962613283"
       },
       {
         "file": "src/app/home/home.page.scss",
-        "hash": "17801515674306590800"
-=======
-        "hash": "10002957098587360016"
-      },
-      {
-        "file": "src/app/home/home.page.scss",
-        "hash": "11623173706459450501"
->>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
+        "hash": "7128254993395386152"
       },
       {
         "file": "src/app/home/home.page.spec.ts",
@@ -36447,7 +36146,6 @@
         "hash": "1571215977137710084"
       },
       {
-<<<<<<< HEAD
         "file": "src/app/lib/alerts/alerts-routing.module.ts",
         "hash": "4423306567241766811"
       },
@@ -36472,8 +36170,6 @@
         "hash": "4430417025641740453"
       },
       {
-=======
->>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
         "file": "src/app/lib/dashboard/dashboard-routing.module.ts",
         "hash": "17539954454289649274"
       },
@@ -36482,6 +36178,200 @@
         "hash": "1729686176567888049"
       },
       {
+        "file": "src/app/lib/dashboard/dashboard.page.html",
+        "hash": "6218578835826298319"
+      },
+      {
+        "file": "src/app/lib/dashboard/dashboard.page.scss",
+        "hash": "15292748616422923403"
+      },
+      {
+        "file": "src/app/lib/dashboard/dashboard.page.spec.ts",
+        "hash": "10299370225174665583"
+      },
+      {
+        "file": "src/app/lib/dashboard/dashboard.page.ts",
+        "hash": "6629316402514180678"
+      },
+      {
+        "file": "src/app/lib/login-pages/forgot-password/forgot-password-routing.module.ts",
+        "hash": "10500165477785471622"
+      },
+      {
+        "file": "src/app/lib/login-pages/forgot-password/forgot-password.module.ts",
+        "hash": "8250733450243312226"
+      },
+      {
+        "file": "src/app/lib/login-pages/forgot-password/forgot-password.page.html",
+        "hash": "9515586978299625982"
+      },
+      {
+        "file": "src/app/lib/login-pages/forgot-password/forgot-password.page.scss",
+        "hash": "14227328431668465597"
+      },
+      {
+<<<<<<< HEAD
+        "file": "package-lock.json",
+<<<<<<< HEAD
+        "hash": "4949576108658912931"
+=======
+        "hash": "9580281434768023306"
+>>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
+=======
+        "file": "src/app/lib/login-pages/forgot-password/forgot-password.page.spec.ts",
+        "hash": "15683849797666723071"
+>>>>>>> main
+      },
+      {
+        "file": "src/app/lib/login-pages/forgot-password/forgot-password.page.ts",
+        "hash": "15546615231916442605"
+      },
+      {
+<<<<<<< HEAD
+        "file": "src/app/app-routing.module.ts",
+<<<<<<< HEAD
+        "hash": "14513939286121695881"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "9082892695689595074"
+=======
+        "hash": "4274169646382709219"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "3424913493422141151"
+>>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
+=======
+        "file": "src/app/lib/login-pages/login/login-routing.module.ts",
+        "hash": "15207053381291759772"
+      },
+      {
+        "file": "src/app/lib/login-pages/login/login.module.ts",
+        "hash": "7039089907622455583"
+>>>>>>> main
+      },
+      {
+        "file": "src/app/lib/login-pages/login/login.page.html",
+        "hash": "8289198368146614591"
+      },
+      {
+        "file": "src/app/lib/login-pages/login/login.page.scss",
+        "hash": "11262988984933323372"
+      },
+      {
+<<<<<<< HEAD
+        "file": "src/app/app.component.ts",
+<<<<<<< HEAD
+        "hash": "8407997828494117431"
+      },
+      {
+        "file": "src/app/app.module.ts",
+        "hash": "13257609706150873997"
+=======
+        "hash": "15647262627723644410"
+      },
+      {
+        "file": "src/app/app.module.ts",
+        "hash": "10565052670747655211"
+>>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
+=======
+        "file": "src/app/lib/login-pages/login/login.page.spec.ts",
+        "hash": "11622843872418222859"
+      },
+      {
+        "file": "src/app/lib/login-pages/login/login.page.ts",
+        "hash": "6176553509798936060"
+>>>>>>> main
+      },
+      {
+        "file": "src/app/lib/login-pages/password-change/password-change-routing.module.ts",
+        "hash": "9014260382581329988"
+      },
+      {
+        "file": "src/app/lib/login-pages/password-change/password-change.module.ts",
+        "hash": "14961464536564962772"
+      },
+      {
+<<<<<<< HEAD
+        "file": "src/app/home/home.page.html",
+<<<<<<< HEAD
+        "hash": "17928311516730413918"
+      },
+      {
+        "file": "src/app/home/home.page.scss",
+        "hash": "17801515674306590800"
+=======
+        "hash": "10002957098587360016"
+      },
+      {
+        "file": "src/app/home/home.page.scss",
+        "hash": "11623173706459450501"
+>>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
+=======
+        "file": "src/app/lib/login-pages/password-change/password-change.page.html",
+        "hash": "3353184410785137835"
+      },
+      {
+        "file": "src/app/lib/login-pages/password-change/password-change.page.scss",
+        "hash": "9773515470989878591"
+>>>>>>> main
+      },
+      {
+        "file": "src/app/lib/login-pages/password-change/password-change.page.spec.ts",
+        "hash": "7520919671846736759"
+      },
+      {
+        "file": "src/app/lib/login-pages/password-change/password-change.page.ts",
+        "hash": "131733316737681358"
+      },
+      {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "file": "src/app/lib/alerts/alerts-routing.module.ts",
+        "hash": "4423306567241766811"
+=======
+        "file": "src/app/lib/login-pages/password-reset-otp/password-reset-otp-routing.module.ts",
+        "hash": "17922179962856846194"
+>>>>>>> main
+      },
+      {
+        "file": "src/app/lib/login-pages/password-reset-otp/password-reset-otp.module.ts",
+        "hash": "17448109761705592414"
+      },
+      {
+        "file": "src/app/lib/login-pages/password-reset-otp/password-reset-otp.page.html",
+        "hash": "1489174981284326655"
+      },
+      {
+        "file": "src/app/lib/login-pages/password-reset-otp/password-reset-otp.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/lib/login-pages/password-reset-otp/password-reset-otp.page.spec.ts",
+        "hash": "65841198110851915"
+      },
+      {
+        "file": "src/app/lib/login-pages/password-reset-otp/password-reset-otp.page.ts",
+        "hash": "1706306861743178554"
+      },
+      {
+<<<<<<< HEAD
+=======
+>>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
+        "file": "src/app/lib/dashboard/dashboard-routing.module.ts",
+        "hash": "17539954454289649274"
+=======
+        "file": "src/app/lib/login-pages/register/register-routing.module.ts",
+        "hash": "6460169682535667979"
+>>>>>>> main
+      },
+      {
+        "file": "src/app/lib/login-pages/register/register.module.ts",
+        "hash": "10972177068596448386"
+      },
+      {
+<<<<<<< HEAD
         "file": "src/app/lib/dashboard/dashboard.page.html",
 <<<<<<< HEAD
         "hash": "16670014670681716441"
@@ -36711,18 +36601,22 @@
         "hash": "2532901394235596486"
 =======
         "hash": "294643847346644064"
+=======
+        "file": "src/app/lib/login-pages/register/register.page.html",
+        "hash": "908097429159177984"
+>>>>>>> main
       },
       {
-        "file": "src/app/lib/dashboard/dashboard.page.scss",
-        "hash": "3244421341483603138"
+        "file": "src/app/lib/login-pages/register/register.page.scss",
+        "hash": "2899378429466539929"
       },
       {
-        "file": "src/app/lib/dashboard/dashboard.page.spec.ts",
-        "hash": "15860121979940362694"
+        "file": "src/app/lib/login-pages/register/register.page.spec.ts",
+        "hash": "11091268829114787836"
       },
       {
-        "file": "src/app/lib/dashboard/dashboard.page.ts",
-        "hash": "13336687465604128618"
+        "file": "src/app/lib/login-pages/register/register.page.ts",
+        "hash": "13436484029402728614"
       },
       {
         "file": "src/app/lib/readings/readings-routing.module.ts",
@@ -36734,19 +36628,35 @@
       },
       {
         "file": "src/app/lib/readings/readings.page.html",
-        "hash": "8631224155802465555"
+        "hash": "10929522756167863108"
       },
       {
         "file": "src/app/lib/readings/readings.page.scss",
-        "hash": "3244421341483603138"
+        "hash": "5071384875099166692"
       },
       {
         "file": "src/app/lib/readings/readings.page.spec.ts",
-        "hash": "16865895729625930203"
+        "hash": "9476915711580207825"
       },
       {
         "file": "src/app/lib/readings/readings.page.ts",
         "hash": "3203618822105702714"
+      },
+      {
+        "file": "src/app/lib/services/auth/auth.service.spec.ts",
+        "hash": "10697900076114607965"
+      },
+      {
+        "file": "src/app/lib/services/auth/auth.service.ts",
+        "hash": "16863058106817023465"
+      },
+      {
+        "file": "src/app/lib/services/data/data.service.spec.ts",
+        "hash": "7752277138120921839"
+      },
+      {
+        "file": "src/app/lib/services/data/data.service.ts",
+        "hash": "14362606040653097356"
       },
       {
         "file": "src/app/lib/settings/settings-routing.module.ts",
@@ -36918,6 +36828,10 @@
 >>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
       },
       {
+        "file": "src/assets/green-bg.png",
+        "hash": "2532901394235596486"
+      },
+      {
         "file": "src/assets/icon/favicon.png",
         "hash": "17482944836898362639"
       },
@@ -36972,10 +36886,14 @@
       {
         "file": "tsconfig.json",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "hash": "7058842474959412845"
 =======
         "hash": "9300148005582941852"
 >>>>>>> eaa00be030fd7d3eb0f42ada3b2d1ef5d7717b0f
+=======
+        "hash": "7058842474959412845"
+>>>>>>> main
       },
       {
         "file": "tsconfig.spec.json",

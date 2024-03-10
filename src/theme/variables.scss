@@ -242,3 +242,11 @@ html {
    */
   --ion-dynamic-font: var(--ion-default-dynamic-font);
 }
+
+$colors: (
+    calm: (
+      base: #000,
+      contrast: #ffc900
+    ),
+);
+
