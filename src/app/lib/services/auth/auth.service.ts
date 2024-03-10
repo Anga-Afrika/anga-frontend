@@ -19,9 +19,9 @@ export class AuthService {
     return this.http.post(`${this.apiUrl}/register`, { email, password });
   }
 
-  login(email: string, password: string): Observable<any> {
-    return this.http.post(`${this.apiUrl}/login`, { email, password });
-  }
+  // login(email: string, password: string): Observable<any> {
+  //   return this.http.post(`${this.apiUrl}/login`, { email, password });
+  // }
 
   logout() {
     // Implement your logout logic here, such as clearing tokens or user objects from local storage

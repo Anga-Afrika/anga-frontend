@@ -1,0 +1,110 @@
+{
+  "nodes": {},
+  "externalNodes": {
+    "npm:@aashutoshrathi/word-wrap": {
+      "type": "npm",
+      "name": "npm:@aashutoshrathi/word-wrap",
+      "data": {
+        "version": "1.2.6",
+        "packageName": "@aashutoshrathi/word-wrap",
+        "hash": "sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA=="
+      }
+    },
+    "npm:@ampproject/remapping": {
+      "type": "npm",
+      "name": "npm:@ampproject/remapping",
+      "data": {
+        "version": "2.2.1",
+        "packageName": "@ampproject/remapping",
+        "hash": "sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg=="
+      }
+    },
+    "npm:@angular-devkit/architect": {
+      "type": "npm",
+      "name": "npm:@angular-devkit/architect",
+      "data": {
+        "version": "0.1702.2",
+        "packageName": "@angular-devkit/architect",
+        "hash": "sha512-qBvif8/NquFUqVQgs4U+8wXh/rQZv+YlYwg6eDZly1bIaTd/k9spko/seTtNT1OpK/Be+GLo5IbiQ7i2SON3iQ=="
+      }
+    },
+    "npm:@angular-devkit/build-angular": {
+      "type": "npm",
+      "name": "npm:@angular-devkit/build-angular",
+      "data": {
+        "version": "17.2.2",
+        "packageName": "@angular-devkit/build-angular",
+        "hash": "sha512-K55xBiWBfxD4wmxLR2viOPbBryOk6YaZeNr72IMkp1yIrIy1BES6LDJi7R9fDW7+TprqZdM4B91Tkc+BCwYQzQ=="
+      }
+    },
+    "npm:@angular-devkit/build-webpack": {
+      "type": "npm",
+      "name": "npm:@angular-devkit/build-webpack",
+      "data": {
+        "version": "0.1702.2",
+        "packageName": "@angular-devkit/build-webpack",
+        "hash": "sha512-+c7rHD2Se1VD9i9uPEYHqhq8hTnsUAn5LfeJCLS8g7FU8T42tDSC/k1qWxHp7d99kf7ecg2BvYcZDlYaBUnl3A=="
+      }
+    },
+    "npm:@angular-devkit/core": {
+      "type": "npm",
+      "name": "npm:@angular-devkit/core",
+      "data": {
+        "version": "17.2.2",
+        "packageName": "@angular-devkit/core",
+        "hash": "sha512-bKMi6bBkEeN4a3qTxCykhrAvE0ESHhKO38Qh1bN/8QSyvKVAEyVAVls5W9IN5GKRHvXgEn9aw+DSzRnPpy9nyw=="
+      }
+    },
+    "npm:@angular-devkit/core@15.2.10": {
+      "type": "npm",
+      "name": "npm:@angular-devkit/core@15.2.10",
+      "data": {
+        "version": "15.2.10",
+        "packageName": "@angular-devkit/core",
+        "hash": "sha512-bFPm7wjvfBds9km2rCJxUhzkqe4h3h/199yJtzC1bNvwRr2LMHvtyoQAzftda+gs7Ulqac5wzUEZX/cVV3WrsA=="
+      }
+    },
+    "npm:@angular-devkit/schematics": {
+      "type": "npm",
+      "name": "npm:@angular-devkit/schematics",
+      "data": {
+        "version": "17.2.2",
+        "packageName": "@angular-devkit/schematics",
+        "hash": "sha512-t6dBhHvto9BEIo+Kew0+YyIS3TV1SEd4MActUk+zF4NNQyJ8wRUHL+8glUKB6ZWPyCTYSinJ+QKn/3yytELTHg=="
+      }
+    },
+    "npm:@angular-devkit/schematics@15.2.10": {
+      "type": "npm",
+      "name": "npm:@angular-devkit/schematics@15.2.10",
+      "data": {
+        "version": "15.2.10",
+        "packageName": "@angular-devkit/schematics",
+        "hash": "sha512-EeoDs4oKFpLZNa21G/8dqBdclEc4U2piI9EeXCVTaN6z5DYXIZ0G1WtCXU8nhD+GckS47rmfZ4/3lMaXAvED+g=="
+      }
+    },
+    "npm:@angular-eslint/builder": {
+      "type": "npm",
+      "name": "npm:@angular-eslint/builder",
+      "data": {
+        "version": "17.2.1",
+        "packageName": "@angular-eslint/builder",
+        "hash": "sha512-O30eaR0wCPiP+zKWvXj2JM8hVq30Wok2rp7zJMFm3PurjF9nWIIyexXkE5fa538DYZYxu8N3gQRqhpv5jvTXCg=="
+      }
+    },
+    "npm:@angular-eslint/bundled-angular-compiler": {
+      "type": "npm",
+      "name": "npm:@angular-eslint/bundled-angular-compiler",
+      "data": {
+        "version": "17.2.1",
+        "packageName": "@angular-eslint/bundled-angular-compiler",
+        "hash": "sha512-puC0itsZv2QlrDOCcWtq1KZH+DvfrpV+mV78HHhi6+h25R5iIhr8ARKcl3EQxFjvrFq34jhG8pSupxKvFbHVfA=="
+      }
+    },
+    "npm:@angular-eslint/eslint-plugin": {
+      "type": "npm",
+      "name": "npm:@angular-eslint/eslint-plugin",
+      "data": {
+        "version": "17.2.1",
+        "packageName": "@angular-eslint/eslint-plugin",
+        "hash": "sha512-9yA81BHpsaCUKRBtHGN3ieAy8HpIoffzPQMu34lYqZFT4yGHGhYmhQjNSQGBRbV2LD9dVv2U35rMHNmUcozXpw=="
+  

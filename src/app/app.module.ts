@@ -9,10 +9,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthService } from "./lib/services/auth/auth.service";
 import { HighchartsChartModule } from 'highcharts-angular';
-
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule,HighchartsChartModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule,HighchartsChartModule,ReactiveFormsModule, FormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy},  AuthService ],
   bootstrap: [AppComponent],
 })

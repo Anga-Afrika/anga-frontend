@@ -11,7 +11,7 @@ import { AuthService } from "./lib/services/auth/auth.service";
 export class AppComponent {
   constructor(private http: HttpClient, private authService: AuthService) {}
 
-  isAuthenticated(): boolean {
-    return this.authService.isAuthenticated();
-  }
+  // isAuthenticated(): boolean {
+  //   return this.authService.isAuthenticated();
+  // }
 }
