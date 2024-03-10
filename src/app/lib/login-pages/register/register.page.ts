@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router } from "@angular/router";
 import { AuthService } from "src/app/lib/services/auth/auth.service";
+import * as Highcharts from 'highcharts';
 
 @Component({
   selector: 'app-register',

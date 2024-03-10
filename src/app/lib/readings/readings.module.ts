@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ReadingsPageRoutingModule } from './readings-routing.module';
 
 import { ReadingsPage } from './readings.page';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ReadingsPageRoutingModule
+    ReadingsPageRoutingModule,
+    HighchartsChartModule
   ],
   declarations: [ReadingsPage]
 })

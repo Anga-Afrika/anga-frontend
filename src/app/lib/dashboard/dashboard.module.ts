@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { DashboardPageRoutingModule } from './dashboard-routing.module';
 
 import { DashboardPage } from './dashboard.page';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DashboardPageRoutingModule
+    DashboardPageRoutingModule,
+    HighchartsChartModule
   ],
-  declarations: [DashboardPage]
+  declarations: [DashboardPage,]
 })
 export class DashboardPageModule {}
