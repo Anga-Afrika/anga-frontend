@@ -30,6 +30,9 @@ ion-header {
 .divider {
   margin: 16px 0;
   text-align: center;
+  ion-label:hover{
+    color:#E8C872;
+  }
 }
 
 .divider ion-label {
@@ -43,3 +46,13 @@ ion-content {
   --background: #508D69;
   
       }
+ion-item {
+  --border-color:#508D69;
+  --highlight-color-focused:#508D69;
+  --padding-start:0;
+  --inner-padding-end:0;
+  ion-input{
+    color: #fff;
+  }
+
+}
