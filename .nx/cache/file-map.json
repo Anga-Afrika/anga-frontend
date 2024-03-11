@@ -6,6 +6,7 @@
     "@angular/common": "^17.0.2",
     "@angular/compiler": "^17.0.2",
     "@angular/core": "^17.0.2",
+    "@angular/fire": "^17.0.1",
     "@angular/forms": "^17.0.2",
     "@angular/platform-browser": "^17.0.2",
     "@angular/platform-browser-dynamic": "^17.0.2",
@@ -15,6 +16,7 @@
     "@capacitor/ios": "^5.7.2",
     "@ionic/angular": "^7.0.0",
     "cocoapods": "^0.0.0",
+    "firebase": "^10.8.1",
     "highcharts": "^11.4.0",
     "highcharts-angular": "^4.0.0",
     "ionicons": "^7.0.0",
@@ -33,6 +35,7 @@
     "@ionic/angular-toolkit": "^9.0.0",
     "@ionic/lab": "3.2.15",
     "@types/jasmine": "~5.1.0",
+    "@types/node": "^20.11.25",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^7.26.0",
@@ -163,11 +166,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "6403524883418752407"
+        "hash": "8934896195824329045"
       },
       {
         "file": "package.json",
-        "hash": "7494851105855139702"
+        "hash": "2127775691832729998"
       },
       {
         "file": "src/app/app-routing.module.ts",
@@ -175,7 +178,7 @@
       },
       {
         "file": "src/app/app.component.html",
-        "hash": "13766786014615946869"
+        "hash": "5235978417525383641"
       },
       {
         "file": "src/app/app.component.scss",
@@ -187,11 +190,11 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "8407997828494117431"
+        "hash": "13054797861495456147"
       },
       {
         "file": "src/app/app.module.ts",
-        "hash": "14297164425215965910"
+        "hash": "13989436823034412447"
       },
       {
         "file": "src/app/home/home-routing.module.ts",
@@ -251,7 +254,7 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.html",
-        "hash": "939594542348957589"
+        "hash": "17094382626530205304"
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.scss",
@@ -295,15 +298,15 @@
       },
       {
         "file": "src/app/lib/login-pages/login/login.module.ts",
-        "hash": "7039089907622455583"
+        "hash": "10675456601407472197"
       },
       {
         "file": "src/app/lib/login-pages/login/login.page.html",
-        "hash": "13131804004284028173"
+        "hash": "957721932875532105"
       },
       {
         "file": "src/app/lib/login-pages/login/login.page.scss",
-        "hash": "5616577778357252381"
+        "hash": "12532338121950920448"
       },
       {
         "file": "src/app/lib/login-pages/login/login.page.spec.ts",
@@ -311,7 +314,7 @@
       },
       {
         "file": "src/app/lib/login-pages/login/login.page.ts",
-        "hash": "6176553509798936060"
+        "hash": "6743823233045526113"
       },
       {
         "file": "src/app/lib/login-pages/password-change/password-change-routing.module.ts",
@@ -415,7 +418,7 @@
       },
       {
         "file": "src/app/lib/services/auth/auth.service.ts",
-        "hash": "16863058106817023465"
+        "hash": "16008656518865850925"
       },
       {
         "file": "src/app/lib/services/data/data.service.spec.ts",
@@ -474,10 +477,6 @@
         "hash": "13030885997104941777"
       },
       {
-        "file": "src/assets/green-bg.png",
-        "hash": "2532901394235596486"
-      },
-      {
         "file": "src/assets/icon/favicon.png",
         "hash": "17482944836898362639"
       },
@@ -495,11 +494,11 @@
       },
       {
         "file": "src/environments/environment.prod.ts",
-        "hash": "5406836414239361753"
+        "hash": "8786847268026198768"
       },
       {
         "file": "src/environments/environment.ts",
-        "hash": "17458466784506237106"
+        "hash": "11585442583266132156"
       },
       {
         "file": "src/global.scss",

@@ -23,7 +23,7 @@ export class LoginPage implements OnInit  {
   }
   validationFormUser!: FormGroup;
 
-constructor(private router: Router, public formBuilder: FormBuilder, private authService: AuthService) {}
+constructor(private router: Router, public formBuilder: FormBuilder, public authService: AuthService) {}
 
   ngOnInit() {
     this.validationFormUser = this.formBuilder.group({
@@ -40,7 +40,14 @@ constructor(private router: Router, public formBuilder: FormBuilder, private aut
 }
 
 LoginUser(value) {
-  // console.log("I'm logged in")
-  this.router.navigate(['/dashboard']);
+  console.log("I'm logged in")
+  try{
+    this.authService.loginFireAuth(value).then(resp =>{
+      console.log(resp);
+      this.router.navigate(['tabs']);
+    })
+  }catch(err){
+    console.log(err);
+  }
 }
 }
