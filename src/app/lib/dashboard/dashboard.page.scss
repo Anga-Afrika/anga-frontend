@@ -1,11 +1,11 @@
 
 ion-content {
-  --background: #fff;
+  --background: #d1d2d4;
       }
 
       ion-header {
         ion-toolbar {
-          --background: transparent;
+          --background: #fff;
           --border-style: none;
           --min-height: 80px;
           padding: 0 15px;
@@ -45,3 +45,17 @@ ion-content {
   .highcharts-credits {
     display: none !important;
     }
+
+  ion-badge{
+    position: absolute; top: -8px; right: -8px;
+    border-radius: 50%; 
+    background-color: red; 
+    color: white;
+  }
+
+  ion-icon{
+    color: #508D69;
+  }
+  ion-button{
+    position: relative;
+  }
