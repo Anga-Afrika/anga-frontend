@@ -1,10 +1,22 @@
   <ion-header mode="ios">
-    <ion-toolbar>
-    <ion-title class="title-color">
-    Ghala_
-    </ion-title>
+    <ion-toolbar style="padding: 0;" >
+      <ion-buttons (click)="logout()" slot="end">
+        <ion-button tab="alerts">
+          <ion-icon name="share-outline"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+            <ion-buttons slot="end">
+              <ion-button tab="alerts" style="position: relative;">
+                <ion-icon name="notifications"></ion-icon>
+                <ion-badge>2</ion-badge>
+              </ion-button>
+                  </ion-buttons>
+            <ion-buttons slot="end">
+              <ion-button tab="alerts" style="position: relative;">
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+              </ion-button>       
+                  </ion-buttons>
     </ion-toolbar>
-    <ion-button (click)="logout()">Logout</ion-button>
     </ion-header>
     <ion-app id="main-content">
 
@@ -36,8 +48,8 @@
   </div>
   
   
-  
 </ion-content>
+
 </ion-app>
 
 
