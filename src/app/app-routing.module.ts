@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginPage } from './lib/login-pages/login/login.page';
 import { RegisterPage } from './lib/login-pages/register/register.page';
+import { AuthGuard } from './lib/guard/auth.guard';
 
 const routes: Routes = [
   {
@@ -29,29 +30,10 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./lib/login-pages/register/register.module').then( m => m.RegisterPageModule)
   },
-  // { path: '', redirectTo: '/home', pathMatch: 'full' },   {
-  //   path: 'dashboard',
-  //   loadChildren: () => import('./lib/dashboard/dashboard.module').then( m => m.DashboardPageModule)
-  // },
-  // {
-  //   path: 'storage',
-  //   loadChildren: () => import('./lib/storage/storage.module').then( m => m.StoragePageModule)
-  // },
-  // {
-  //   path: 'settings',
-  //   loadChildren: () => import('./lib/settings/settings.module').then( m => m.SettingsPageModule)
-  // },
-  // {
-  //   path: 'readings',
-  //   loadChildren: () => import('./lib/readings/readings.module').then( m => m.ReadingsPageModule)
-  // },
-  // {
-  //   path: 'alerts',
-  //   loadChildren: () => import('./lib/alerts/alerts.module').then( m => m.AlertsPageModule)
-  // },
   {
     path: 'tabs',
-    loadChildren: () => import('./lib/tabs/tabs.module').then( m => m.TabsPageModule)
+    loadChildren: () => import('./lib/tabs/tabs.module').then( m => m.TabsPageModule),
+    canActivate: [AuthGuard]
   },
 // Default route
 

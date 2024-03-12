@@ -3,44 +3,92 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router } from "@angular/router";
 import { AuthService } from "src/app/lib/services/auth/auth.service";
 import * as Highcharts from 'highcharts';
-
+import { FormBuilder, FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { AlertController, LoadingController, NavController } from '@ionic/angular';
 @Component({
   selector: 'app-register',
   templateUrl: './register.page.html',
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage  {
-  email: string='';
-  password: string='';
-  confirmPassword: string='';
+  validationMessage = {
+    names: [{type:"required", message:"Please enter your name"}],
+    email: [{type:"required", message:"Please enter your email"},
+            {type:"pattern", message:"Incorrect format, try again"}],
+    phone: [{type:"required", message:"Please enter your phone no."}],
+    password:[
+      {type:"required", message:"Please enter your password"},
+      {type:"minlength", message:"Password must be at least 8 characters"}
+    ],
+  }
+  validationFormUser!: FormGroup;
+  loading: any;
+  constructor(private formBuilder: FormBuilder, private http:HttpClient, private router: Router, private authService: AuthService, public loadingCtrl: LoadingController, private alertCtrl: AlertController, private navCtrl: NavController, private nav: NavController) { }
 
-  constructor( private http:HttpClient, private router: Router, private authService: AuthService) { }
-
-  onSubmit(): void {
-    if (this.password === this.confirmPassword) {
-      this.authService.register(this.email, this.password)
-        .subscribe(response => {
-          // Handle successful sign-up
-          this.router.navigate(['/login']);
-        }, error => {
-          // Handle sign-up error
-        });
-    } else {
-      // Passwords do not match
+  ngOnInit() {
+    this.validationFormUser = this.formBuilder.group({
+      names : new FormControl('', Validators.compose([
+        Validators.required,
+      ])),
+      phone: new FormControl('',Validators.compose([
+        Validators.required,
+      ])),
+      email: new FormControl('',Validators.compose([
+        Validators.required,
+        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
+      ])),
+      password: new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.minLength(8)
+      ]))
+      })
+  }
+  registerUser(value) {
+    // this.showAlert();
+    try {
+      this.authService.userRegistration(value).then(response => {
+        console.log(response);
+        if (response.user) {
+          this.dismissLoading();  
+          this.router.navigate(['login']);
+        }
+      }, error => {
+        this.dismissLoading();  
+        this.errorLoading(error.message);
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  
+  async errorLoading(message: any) {
+    const loading = await this.alertCtrl.create({
+      header: "Error registering",
+      message: message,
+      buttons: [{
+        text: 'OK',
+        handler: () => {
+          this.navCtrl.navigateBack(['register']);
+        }
+      }]
+    });
+    await loading.present();
+  }
+  
+  // async showAlert() {
+  //   const loading = await this.loadingCtrl.create({
+  //     message: "Please wait..."
+  //   })
+  //    loading.present();
+  // }
+  
+  dismissLoading() {
+    if (this.loading) {
+      this.loading.dismiss();
     }
   }
 
-  // register() {
-  //   //save user details to your backend
-  //   //navigate to the login page once the user details are saved
-  //   this.router.navigate(['/login']);
-  // }
- 
-  obj:any;
-
-  ngOnInit(): void {
-    this.obj = this.http.get("http://127.0.0.1:8000/").subscribe(
-       data => this.obj = data
-    )
+  goToLogin(){
+    this.nav.navigateForward(['login']);
   }
 }
