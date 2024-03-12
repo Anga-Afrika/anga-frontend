@@ -15,10 +15,10 @@
             <picture>
               <img src="assets/iot-illustration.png" alt="iot">
             </picture>
-            <ion-button class="register-button" [routerLink]="['/register']" expand="block"
+            <ion-button class="register-button" (click)="goToRegister()" expand="block"
               color="#508D69">Register</ion-button>
             <span class="already">Already a user?</span>
-            <ion-button class="login-button" [routerLink]="['/login']" expand="block" color="#508D69">Sign
+            <ion-button class="login-button" (click)="goToLogin()" expand="block" color="#508D69">Sign
               In</ion-button>
           </ion-col>
         </ion-row>

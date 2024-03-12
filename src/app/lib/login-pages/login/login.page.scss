@@ -41,6 +41,9 @@ ion-header {
   color: white;
 }
 
+ion-card{
+  background:#000;
+}
 
 ion-content {
   --background: #508D69;
@@ -51,6 +54,7 @@ ion-item {
   --highlight-color-focused:#508D69;
   --padding-start:0;
   --inner-padding-end:0;
+  --background: #000;
   ion-input{
     color: #fff;
   }
