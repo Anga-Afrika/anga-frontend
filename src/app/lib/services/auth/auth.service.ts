@@ -13,8 +13,6 @@ export class AuthService {
     throw new Error('Method not implemented.');
   }
   
-  private apiUrl = 'http://0.0.0.0:8001/'; //backend API URL
-
   constructor(private http: HttpClient, public auth: AngularFireAuth) { }
 
   loginFireAuth(value){
@@ -26,13 +24,15 @@ export class AuthService {
     })
   }
 
-  register(email: string, password: string): Observable<any> {
-    return this.http.post(`${this.apiUrl}/register`, { email, password });
+  
+  userRegistration(value){
+    return new Promise<any> ((resolve, reject)=>{
+      firebase.auth().createUserWithEmailAndPassword(value.email, value.password).then(
+        res => resolve(res),
+        error => reject(error)
+      )
+    })
   }
-
-  // login(email: string, password: string): Observable<any> {
-  //   return this.http.post(`${this.apiUrl}/login`, { email, password });
-  // }
 
   logout() {
     // Implement your logout logic here, such as clearing tokens or user objects from local storage

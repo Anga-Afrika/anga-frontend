@@ -8,10 +8,10 @@
 
 <ion-app id="main-content">
 
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content [fullscreen]="true" class="custom-content">
+  <form [formGroup]="validationFormUser" (ngSubmit)="registerUser(validationFormUser.value)">
   <div class="container" color="#508D69">
   <div class="grid-container" color="#508D69">
-    <form (ngSubmit)="onSubmit()">
   <ion-grid color="#508D69">
     <ion-row justify-content-center>
       <ion-col size="12">
@@ -22,38 +22,80 @@
             </div>
 
             <ion-item>
-              <ion-label position="floating">Email</ion-label>
-              <ion-input type="email" [(ngModel)]="email" required></ion-input>
+              <ion-label position="floating" >Name</ion-label>
+              <ion-input name="names" type="names" required formControlName="names"></ion-input>
             </ion-item>
+
+            <div>
+              <ng-container *ngFor="let validation of validationMessage.names">
+                <div class="error_message" *ngIf="validationFormUser.get('names')?.hasError(validation.type) && (validationFormUser.get('names')?.dirty || validationFormUser.get('names')?.touched)">
+                  {{validation.message}}
+                </div>
+              </ng-container>
+            </div>
+
+            <ion-item>
+              <ion-label position="floating" >Email</ion-label>
+              <ion-input name="email" type="email" required formControlName="email"></ion-input>
+            </ion-item>
+
+            <div>
+              <ng-container *ngFor="let validation of validationMessage.email">
+                <div class="error_message" *ngIf="validationFormUser.get('email')?.hasError(validation.type) && (validationFormUser.get('email')?.dirty || validationFormUser.get('email')?.touched)">
+                  {{validation.message}}
+                </div>
+              </ng-container>
+            </div>
+
+            <ion-item>
+              <ion-label position="floating" >Phone</ion-label>
+              <ion-input name="phone" type="number" required formControlName="phone"></ion-input>
+            </ion-item>
+            
+            <div>
+              <ng-container *ngFor="let validation of validationMessage.phone">
+                <div class="error_message" *ngIf="validationFormUser.get('phone')?.hasError(validation.type) && (validationFormUser.get('phone')?.dirty || validationFormUser.get('phone')?.touched)">
+                  {{validation.message}}
+                </div>
+              </ng-container>
+            </div>
 
             <ion-item>
               <ion-label position="floating">Password</ion-label>
-              <ion-input type="password" [(ngModel)]="password" required></ion-input>
+              <ion-input name="password" type="password" formControlName="password" required></ion-input>
             </ion-item>
 
-            <ion-item>
-              <ion-label position="floating">Confirm Password</ion-label>
-              <ion-input type="password" [(ngModel)]="confirmPassword" required></ion-input>
-            </ion-item>
+            <div>
+              <ng-container *ngFor="let validation of validationMessage.password">
+                <div class="error_message" *ngIf="validationFormUser.get('password')?.hasError(validation.type) && (validationFormUser.get('password')?.dirty || validationFormUser.get('password')?.touched)">
+                  {{validation.message}}
+                </div>
+              </ng-container>
+            </div>
+
           </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
-  </form>
+  
 </div>
 
 <div class="grid-container">
   <div class="divider">
-    <ion-button expand="block" class="register-button" color="#FF8911" (click)="onSubmit()">Sign Up</ion-button>
+    <ion-button expand="block" type="submit" class="register-button" color="#FF8911" [disabled]="!validationFormUser.valid">Sign Up</ion-button>
   </div>
 
-
-    <ion-label color="medium" class="ion-text-center">Or</ion-label>
-
-  <ion-label class="ion-text-center">
-    Already have an account? <a href="/login">Login</a>
-  </ion-label>
 </div>
 </div>
+</form>
+
+<div class="divider">
+  <ion-label class="ion-text-center">Or</ion-label>
+
+    <ion-label class="ion-text-center" (click)="goToLogin()">
+      already have an account?
+    </ion-label>
+</div>
+
 </ion-content>

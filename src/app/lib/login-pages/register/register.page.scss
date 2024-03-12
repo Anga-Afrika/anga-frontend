@@ -1,13 +1,12 @@
-.ion-padding {
-  background-color: greenyellow; /* Example background color */
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-}
-
 .profile-picture-area {
   text-align: center;
   margin-bottom: 2px;
+  color: #508D69;
+}
+
+.custom-content{
+  --height: calc(100vh - var(--ion-toolbar-height));
+  height: var(--height);
 }
 
 .container {
@@ -26,6 +25,9 @@
 .divider {
   margin: 16px 0;
   text-align: center;
+  ion-label:hover{
+    color:#E8C872;
+  }
 }
 
 .divider ion-label {
@@ -34,6 +36,14 @@
   color: white;
 }
 
+ion-card{
+  ion-item{
+  ion-label{
+    --highlight-color-invalid: #508D69;
+  --highlight-color-valid: #508D69;
+  }
+  }
+}
 ion-label.ion-text-center {
   display: block;
 }
@@ -45,9 +55,6 @@ ion-label.ion-text-center {
   border-radius: 5px;
 }
 
-#notifications-btn{
-  position: relative;
-}
 
 ion-back-button {
   height: 40px;
@@ -66,8 +73,8 @@ ion-back-button {
   color:#fff;
 }
 
-.card-color{
-  color:#fff;
+ion-card{
+  background:#000;
 }
   // header
   ion-header {
@@ -82,3 +89,24 @@ ion-back-button {
 ion-content {
   --background: #508D69;
       }
+ion-item {
+  --border-color:#508D69;
+  --highlight-color-focused:#508D69;
+  --padding-start:0;
+  --inner-padding-end:0;
+  --highlight-color-invalid: #508D69;
+  --highlight-color-valid: #508D69;
+  --background: #000;
+  ion-input{
+    color: #fff;
+  }
+}
+.ion-text-center{
+  font-size: small;
+}
+
+.error_message{
+  font-size: 13px;
+  font-weight: 200;
+  color: red;
+}
