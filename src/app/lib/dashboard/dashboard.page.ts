@@ -4,6 +4,7 @@ import { AuthService } from '../services/auth/auth.service';
 import { Router } from '@angular/router';
 import * as Highcharts from 'highcharts';
 
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.page.html',
@@ -12,10 +13,27 @@ import * as Highcharts from 'highcharts';
 export class DashboardPage implements OnInit {
   userName: string | undefined;
   numberOfWarehouses: number | undefined;
+  hideHeader = false;
+  lastY = 0;
   // Declare other statistic variables
+
 
   constructor(private router: Router, private dataService: DataService, private authService: AuthService) { }
 
+
+  onScroll(event) {
+   const currentY = event.detail.scrollTop;
+
+   if (currentY > this.lastY) {
+     // Scrolling down
+     this.hideHeader = true;
+   } else {
+     // Scrolling up
+     this.hideHeader = false;
+   }
+
+   this.lastY = currentY;
+ }
   logout() {
     // Call the logout method from the authentication service
     this.authService.logout();
@@ -37,7 +55,7 @@ export class DashboardPage implements OnInit {
         text: "Monthly Average Temperature"
      },
      subtitle: {
-        text: "Source: WorldClimate.com"
+      //   text: "Source: WorldClimate.com"
      },
      xAxis:{
         categories:["Jan", "Feb", "Mar", "Apr", "May", "Jun",
