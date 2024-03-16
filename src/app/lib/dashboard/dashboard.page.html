@@ -1,52 +1,67 @@
-  <ion-header mode="ios">
-    <ion-toolbar style="padding: 0;" >
-      <ion-buttons (click)="logout()" slot="end">
-        <ion-button tab="alerts">
-          <ion-icon name="share-outline"></ion-icon>
-              </ion-button>
-            </ion-buttons>
-            <ion-buttons slot="end">
-              <ion-button tab="alerts" style="position: relative;">
-                <ion-icon name="notifications"></ion-icon>
-                <ion-badge>2</ion-badge>
-              </ion-button>
-                  </ion-buttons>
-            <ion-buttons slot="end">
-              <ion-button tab="alerts" style="position: relative;">
-                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-              </ion-button>       
-                  </ion-buttons>
-    </ion-toolbar>
-    </ion-header>
+<ion-header mode="ios">
+  <ion-toolbar style="padding: 0;" [class.hide-header]="hideHeader" >
+    <ion-buttons (click)="logout()" slot="end">
+      <ion-button tab="alerts">
+        <ion-icon name="share-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-buttons slot="end">
+            <ion-button tab="alerts" style="position: relative;">
+              <ion-icon name="notifications"></ion-icon>
+              <ion-badge>2</ion-badge>
+            </ion-button>
+                </ion-buttons>
+          <ion-buttons slot="end">
+            <ion-button tab="alerts" style="position: relative;">
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </ion-button>       
+                </ion-buttons>
+  </ion-toolbar>
+  </ion-header>
     <ion-app id="main-content">
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" (ionScroll)="onScroll($event)">
   <div class="dashboard">
-    <h1>Welcome, {{ userName }}</h1>
-    <div class="statistics-cards">
-      <div class="card">
-        <div class="card-content">
-          <h2>Number of Warehouses</h2>
-          <p>{{ numberOfWarehouses }}</p>
-        </div>
-      </div>
-    </div>
+    <ion-card class="card2" color="">
+      <ion-card-content>
+        <h3><ion-icon name=""></ion-icon> Total Warehouses:
+        </h3>
+      </ion-card-content>
+    </ion-card>
   </div>
-  <div>
-    <highcharts-chart
+  <ion-card class="card2" color="">
+    <ion-card-content>
+      <h3><ion-icon name=""></ion-icon> Total compartments:
+      </h3>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="card2" color="">
+    <ion-card-content>
+      <h3><ion-icon name=""></ion-icon> Total Sensors:
+      </h3>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="card2" color="">
+    <ion-card-content>
+      <h3><ion-icon name=""></ion-icon> Active Sensors :
+      </h3>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+      <highcharts-chart
    [Highcharts] = "highcharts" 
    [options] = "chartOptions" 
    style = "width: 100%; height: 400px; display: block;">
 </highcharts-chart>
-  </div>
-  <div>
-    <highcharts-chart
+  </ion-card>
+
+  <ion-card>
+      <highcharts-chart
    [Highcharts] = "highcharts" 
    [options] = "chartOptions" 
    style = "width: 100%; height: 400px; display: block;">
 </highcharts-chart>
-  </div>
-  
+  </ion-card>
   
 </ion-content>
 

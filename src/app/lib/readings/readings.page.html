@@ -1,25 +1,52 @@
-  <ion-app id="main-content">
-    <ion-header mode="ios">
-      <ion-toolbar> 
-        <ion-buttons slot="start">
-          <ion-back-button slot="start" fill="solid" class="button-back" defaultHref="/dashboard">
-            <ion-icon name="chevron-back"></ion-icon>
-          </ion-back-button>
-        </ion-buttons> 
-        <ion-buttons slot="end">
-          <ion-button tab="alerts" style="position: relative;">
-            <ion-icon name="notifications"size="large"></ion-icon>
-            <ion-badge>2</ion-badge>
-          </ion-button>
-              </ion-buttons>
-       </ion-toolbar>
-    </ion-header>
+   <ion-header mode="ios">
+      <ion-toolbar style="padding: 0;" [class.hide-header]="hideHeader">
+        <ion-buttons (click)="back()" slot="start">
+            <ion-back-button slot="start" fill="solid" defaultHref="/dashboard" style="color:#508D69">
+              <ion-icon name="chevron-back"></ion-icon>
+            </ion-back-button>
+          </ion-buttons> 
+              <ion-buttons slot="end">
+                <ion-button tab="alerts" style="position: relative;">
+                  <ion-icon name="notifications"></ion-icon>
+                  <ion-badge>2</ion-badge>
+                </ion-button>
+                    </ion-buttons>
+              <ion-buttons slot="end">
+                <ion-button tab="alerts" style="position: relative;">
+                  <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </ion-button>       
+                    </ion-buttons>
+      </ion-toolbar>
+      </ion-header>
+        <ion-app id="main-content">
 
-
-  <ion-content class="ion-padding">
-    <ion-router-outlet></ion-router-outlet>
-
-    <span><ion-list>
+  <ion-content [fullscreen]="true" (ionScroll)="onScroll($event)">
+    
+    <div class="currents">
+      <ion-card class="card1">
+        <ion-card-content>
+          <h3><ion-icon name=""></ion-icon> Current Humidity:
+            
+          </h3>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="card2">
+        <ion-card-content>
+          <h3><ion-icon name=""></ion-icon> Current Temperature:
+          </h3>
+        </ion-card-content>
+      </ion-card>
+  
+      <ion-card class="currentStatus">
+        <ion-card-content>
+          <h3>Current Status:
+            </h3>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    
+    <ion-card class="filter" style="background-color:#fff">
+      <ion-list>
       <ion-item>
         <p>Filter Options</p>
       </ion-item>
@@ -53,45 +80,23 @@
     </ion-item>
 
     <ion-item>
-      <p>selectedWarehouse, selectedCompartment, selectedSensorID</p>
+      <p> selectedWarehouse, selectedCompartment, selectedSensorID</p>
     </ion-item>
-    <ion-card class="card1" color="">
-      <ion-card-content>
-        <h3><ion-icon name=""></ion-icon> Current Humidity:
-          
-        </h3>
-      </ion-card-content>
-    </ion-card>
-    <ion-card class="card2" color="">
-      <ion-card-content>
-        <h3><ion-icon name=""></ion-icon> Current Temperature:
-        </h3>
-      </ion-card-content>
-    </ion-card>
 
-    <ion-card class="currentStatus" color="">
-      <ion-card-content>
-        <h3>Current Status:
-          </h3>
-      </ion-card-content>
-    </ion-card>
+  </ion-card>
 
-    <ion-button expand="block" fill="outline" color="#FF8911" >Click to monitor sensor
-      data</ion-button>
     <ion-grid>
-          <ion-card class="charts" color="">
+          <ion-card class="charts">
             <ion-card-title></ion-card-title>
             <ion-card-subtitle>
               <ion-icon name="" size="large"></ion-icon>Humidity
             </ion-card-subtitle>
             <ion-card-content>
-              <div class="pie">
-
-              </div>
+                <div id="temperatureChart"></div>
             </ion-card-content>
           </ion-card>
 
-          <ion-card class="charts" color="">
+          <ion-card class="charts">
             <ion-card-title></ion-card-title>
             <ion-card-subtitle>
               <ion-icon name="" size="large"></ion-icon>Temperature
@@ -103,7 +108,7 @@
             </ion-card-content>
           </ion-card>
 
-      <ion-card class="temp" color="">
+      <ion-card class="temp">
         <ion-card-header>
           <ion-card-title></ion-card-title>
           <ion-card-subtitle>Graph</ion-card-subtitle>
@@ -114,6 +119,8 @@
 
       </ion-card>
     </ion-grid>
+  </ion-content>
+  </ion-app>
     
 
 
