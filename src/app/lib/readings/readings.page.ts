@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from "@angular/router";
+import { TemperatureGaugeComponent } from 'src/app/lib/gauge/temperature-gauge/temperature-gauge.component';
+import { HumidityGaugeComponent } from 'src/app/lib/gauge/humidity-gauge/humidity-gauge.component';
 @Component({
   selector: 'app-readings',
   templateUrl: './readings.page.html',
@@ -7,7 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReadingsPage implements OnInit {
 
-  constructor() { }
+  hideHeader = false;
+  lastY = 0;
+
+  constructor(private router: Router) { }
+
+  onScroll(event) {
+    const currentY = event.detail.scrollTop;
+ 
+    if (currentY > this.lastY) {
+      // Scrolling down
+      this.hideHeader = true;
+    } else {
+      // Scrolling up
+      this.hideHeader = false;
+    }
+ 
+    this.lastY = currentY;
+  }
+
+  back() {
+    // Redirect the user to the login page
+    this.router.navigate(['/dashboard']);
+  }
 
   ngOnInit() {
   }
