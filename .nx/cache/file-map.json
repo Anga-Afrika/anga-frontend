@@ -254,11 +254,11 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.html",
-        "hash": "11011303601003129929"
+        "hash": "11553687548819779341"
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.scss",
-        "hash": "16128084732390199677"
+        "hash": "14147766565879219103"
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.spec.ts",
@@ -266,7 +266,7 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.ts",
-        "hash": "4872408946101618103"
+        "hash": "9388663416133435226"
       },
       {
         "file": "src/app/lib/guard/auth.guard.spec.ts",
@@ -382,7 +382,7 @@
       },
       {
         "file": "src/app/lib/login-pages/register/register.page.html",
-        "hash": "5548032189304207461"
+        "hash": "14337675197148605283"
       },
       {
         "file": "src/app/lib/login-pages/register/register.page.scss",
@@ -394,7 +394,7 @@
       },
       {
         "file": "src/app/lib/login-pages/register/register.page.ts",
-        "hash": "6054211819179320639"
+        "hash": "9474199496161163852"
       },
       {
         "file": "src/app/lib/readings/readings-routing.module.ts",
@@ -406,11 +406,11 @@
       },
       {
         "file": "src/app/lib/readings/readings.page.html",
-        "hash": "10929522756167863108"
+        "hash": "4309242666742722299"
       },
       {
         "file": "src/app/lib/readings/readings.page.scss",
-        "hash": "5071384875099166692"
+        "hash": "17014064662982593899"
       },
       {
         "file": "src/app/lib/readings/readings.page.spec.ts",
@@ -418,7 +418,7 @@
       },
       {
         "file": "src/app/lib/readings/readings.page.ts",
-        "hash": "3203618822105702714"
+        "hash": "5124312434812291040"
       },
       {
         "file": "src/app/lib/services/auth/auth.service.spec.ts",
