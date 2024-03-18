@@ -266,7 +266,39 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.ts",
-        "hash": "9388663416133435226"
+        "hash": "10965438972647752579"
+      },
+      {
+        "file": "src/app/lib/gauge/humidity-gauge/humidity-gauge.component.html",
+        "hash": "17077703369538889199"
+      },
+      {
+        "file": "src/app/lib/gauge/humidity-gauge/humidity-gauge.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/lib/gauge/humidity-gauge/humidity-gauge.component.spec.ts",
+        "hash": "18442665072153886034"
+      },
+      {
+        "file": "src/app/lib/gauge/humidity-gauge/humidity-gauge.component.ts",
+        "hash": "13325423768725782277"
+      },
+      {
+        "file": "src/app/lib/gauge/temperature-gauge/temperature-gauge.component.html",
+        "hash": "10801964560280032888"
+      },
+      {
+        "file": "src/app/lib/gauge/temperature-gauge/temperature-gauge.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/lib/gauge/temperature-gauge/temperature-gauge.component.spec.ts",
+        "hash": "3623332077255991350"
+      },
+      {
+        "file": "src/app/lib/gauge/temperature-gauge/temperature-gauge.component.ts",
+        "hash": "8737073902798202466"
       },
       {
         "file": "src/app/lib/guard/auth.guard.spec.ts",
@@ -406,11 +438,11 @@
       },
       {
         "file": "src/app/lib/readings/readings.page.html",
-        "hash": "4309242666742722299"
+        "hash": "2716302611477332648"
       },
       {
         "file": "src/app/lib/readings/readings.page.scss",
-        "hash": "17014064662982593899"
+        "hash": "17580272833632122437"
       },
       {
         "file": "src/app/lib/readings/readings.page.spec.ts",
