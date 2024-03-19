@@ -50,7 +50,7 @@
   <ion-card>
       <highcharts-chart
    [Highcharts] = "highcharts" 
-   [options] = "chartOptions" 
+   [options] = "linechartOptions" 
    style = "width: 100%; height: 400px; display: block;">
 </highcharts-chart>
   </ion-card>
@@ -58,13 +58,15 @@
   <ion-card>
       <highcharts-chart
    [Highcharts] = "highcharts" 
-   [options] = "chartOptions" 
+   [options] = "linechartOptions" 
    style = "width: 100%; height: 400px; display: block;">
 </highcharts-chart>
   </ion-card>
   
+  <ion-card>    
+      <highcharts-chart [Highcharts]="Highcharts" [options]="barchartOptions"
+      style = "width: 100%; height: 400px; display: block;"></highcharts-chart>
+  </ion-card>
 </ion-content>
 
 </ion-app>
-
-

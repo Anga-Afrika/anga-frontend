@@ -3,18 +3,23 @@
   "nxVersion": "17.2.8",
   "deps": {
     "@angular/animations": "^17.0.2",
+    "@angular/cdk": "^17.3.0",
     "@angular/common": "^17.0.2",
     "@angular/compiler": "^17.0.2",
     "@angular/core": "^17.0.2",
     "@angular/fire": "^17.0.1",
     "@angular/forms": "^17.0.2",
+    "@angular/material": "^17.3.0",
     "@angular/platform-browser": "^17.0.2",
     "@angular/platform-browser-dynamic": "^17.0.2",
     "@angular/router": "^17.0.2",
+    "@auth0/angular-jwt": "^5.2.0",
     "@capacitor/cli": "^5.7.2",
     "@capacitor/core": "^5.7.2",
     "@capacitor/ios": "^5.7.2",
     "@ionic/angular": "^7.0.0",
+    "@ionic/storage": "^4.0.0",
+    "@ionic/storage-angular": "^4.0.0",
     "cocoapods": "^0.0.0",
     "firebase": "^10.8.1",
     "highcharts": "^11.4.0",
@@ -87,6 +92,110 @@
       {
         "file": "capacitor.config.ts",
         "hash": "5101788273168509162"
+      },
+      {
+        "file": "cors-anywhere/.eslintignore",
+        "hash": "11242276947106852224"
+      },
+      {
+        "file": "cors-anywhere/.eslintrc",
+        "hash": "9337365267415907079"
+      },
+      {
+        "file": "cors-anywhere/.gitignore",
+        "hash": "5665701929202900706"
+      },
+      {
+        "file": "cors-anywhere/.travis.yml",
+        "hash": "2759836456654558530"
+      },
+      {
+        "file": "cors-anywhere/LICENSE",
+        "hash": "2371426018824887521"
+      },
+      {
+        "file": "cors-anywhere/Procfile",
+        "hash": "8883698442491196717"
+      },
+      {
+        "file": "cors-anywhere/README.md",
+        "hash": "4988329498395402142"
+      },
+      {
+        "file": "cors-anywhere/demo.html",
+        "hash": "5050421934810602027"
+      },
+      {
+        "file": "cors-anywhere/lib/cors-anywhere.js",
+        "hash": "8665915236635839902"
+      },
+      {
+        "file": "cors-anywhere/lib/help.txt",
+        "hash": "17166073046325554286"
+      },
+      {
+        "file": "cors-anywhere/lib/rate-limit.js",
+        "hash": "6244570649330926147"
+      },
+      {
+        "file": "cors-anywhere/lib/regexp-top-level-domain.js",
+        "hash": "10883011454043751043"
+      },
+      {
+        "file": "cors-anywhere/package-lock.json",
+        "hash": "1556854108189080324"
+      },
+      {
+        "file": "cors-anywhere/package.json",
+        "hash": "16304748288445261139"
+      },
+      {
+        "file": "cors-anywhere/server.js",
+        "hash": "11228458065459100100"
+      },
+      {
+        "file": "cors-anywhere/test/cert.pem",
+        "hash": "22752879117448778"
+      },
+      {
+        "file": "cors-anywhere/test/child.js",
+        "hash": "3757731375162533612"
+      },
+      {
+        "file": "cors-anywhere/test/customHelp.html",
+        "hash": "4937486333485865282"
+      },
+      {
+        "file": "cors-anywhere/test/customHelp.txt",
+        "hash": "14299113451937664574"
+      },
+      {
+        "file": "cors-anywhere/test/dummy.txt",
+        "hash": "10830896791258559213"
+      },
+      {
+        "file": "cors-anywhere/test/key.pem",
+        "hash": "14912768662849310078"
+      },
+      {
+        "file": "cors-anywhere/test/setup.js",
+        "hash": "17248004407392966009"
+      },
+      {
+        "file": "cors-anywhere/test/test-examples.js",
+        "hash": "6233211955385431259"
+      },
+      {
+        "file": "cors-anywhere/test/test-memory.js",
+        "hash": "13391037953786839061"
+      },
+      {
+        "file": "cors-anywhere/test/test-ratelimit.js",
+        "hash": "2799865924615060113"
+      },
+      {
+        "file": "cors-anywhere/test/test.js",
+        "hash": "7338765222834695202"
       },
       {
         "file": "ionic.config.json",
@@ -166,15 +275,15 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "17992348338202306391"
+        "hash": "10316552912014681926"
       },
       {
         "file": "package.json",
-        "hash": "15138187697558873838"
+        "hash": "16882818468909395808"
       },
       {
         "file": "src/app/app-routing.module.ts",
-        "hash": "16978963095054959332"
+        "hash": "6141803223122395028"
       },
       {
         "file": "src/app/app.component.html",
@@ -190,11 +299,11 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "13054797861495456147"
+        "hash": "11125528273528419821"
       },
       {
         "file": "src/app/app.module.ts",
-        "hash": "12816695052158055304"
+        "hash": "16273458450279075959"
       },
       {
         "file": "src/app/home/home-routing.module.ts",
@@ -254,7 +363,7 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.html",
-        "hash": "11553687548819779341"
+        "hash": "6847173579896271723"
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.scss",
@@ -266,7 +375,7 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.ts",
-        "hash": "10965438972647752579"
+        "hash": "6445468375702656625"
       },
       {
         "file": "src/app/lib/gauge/humidity-gauge/humidity-gauge.component.html",
@@ -306,7 +415,7 @@
       },
       {
         "file": "src/app/lib/guard/auth.guard.ts",
-        "hash": "12036036238309162650"
+        "hash": "6883585738010197211"
       },
       {
         "file": "src/app/lib/login-pages/forgot-password/forgot-password-routing.module.ts",
@@ -338,11 +447,11 @@
       },
       {
         "file": "src/app/lib/login-pages/login/login.module.ts",
-        "hash": "10675456601407472197"
+        "hash": "18297882848805577998"
       },
       {
         "file": "src/app/lib/login-pages/login/login.page.html",
-        "hash": "16095008220048402223"
+        "hash": "9451284070823015785"
       },
       {
         "file": "src/app/lib/login-pages/login/login.page.scss",
@@ -354,7 +463,7 @@
       },
       {
         "file": "src/app/lib/login-pages/login/login.page.ts",
-        "hash": "755249867940501032"
+        "hash": "3526942964963369234"
       },
       {
         "file": "src/app/lib/login-pages/password-change/password-change-routing.module.ts",
@@ -414,7 +523,7 @@
       },
       {
         "file": "src/app/lib/login-pages/register/register.page.html",
-        "hash": "14337675197148605283"
+        "hash": "18255688638455721510"
       },
       {
         "file": "src/app/lib/login-pages/register/register.page.scss",
@@ -426,7 +535,7 @@
       },
       {
         "file": "src/app/lib/login-pages/register/register.page.ts",
-        "hash": "9474199496161163852"
+        "hash": "16576331789842921935"
       },
       {
         "file": "src/app/lib/readings/readings-routing.module.ts",
@@ -438,7 +547,7 @@
       },
       {
         "file": "src/app/lib/readings/readings.page.html",
-        "hash": "2716302611477332648"
+        "hash": "4442729289282508195"
       },
       {
         "file": "src/app/lib/readings/readings.page.scss",
@@ -450,7 +559,15 @@
       },
       {
         "file": "src/app/lib/readings/readings.page.ts",
-        "hash": "5124312434812291040"
+        "hash": "11056102772820948631"
+      },
+      {
+        "file": "src/app/lib/services/auth/auth-guard.service.spec.ts",
+        "hash": "8941057806246735834"
+      },
+      {
+        "file": "src/app/lib/services/auth/auth-guard.service.ts",
+        "hash": "13015046215726301687"
       },
       {
         "file": "src/app/lib/services/auth/auth.service.spec.ts",
@@ -458,7 +575,7 @@
       },
       {
         "file": "src/app/lib/services/auth/auth.service.ts",
-        "hash": "10028534537799566366"
+        "hash": "15013621952761707119"
       },
       {
         "file": "src/app/lib/services/data/data.service.spec.ts",
@@ -466,7 +583,7 @@
       },
       {
         "file": "src/app/lib/services/data/data.service.ts",
-        "hash": "17042595392967254173"
+        "hash": "3772681048658684320"
       },
       {
         "file": "src/app/lib/settings/settings-routing.module.ts",
@@ -502,7 +619,7 @@
       },
       {
         "file": "src/app/lib/storage/storage.page.html",
-        "hash": "17851071126667433876"
+        "hash": "10505646861697518961"
       },
       {
         "file": "src/app/lib/storage/storage.page.scss",
@@ -558,11 +675,11 @@
       },
       {
         "file": "src/environments/environment.prod.ts",
-        "hash": "8786847268026198768"
+        "hash": "14955725535107279848"
       },
       {
         "file": "src/environments/environment.ts",
-        "hash": "11585442583266132156"
+        "hash": "8063758479169864962"
       },
       {
         "file": "src/global.scss",

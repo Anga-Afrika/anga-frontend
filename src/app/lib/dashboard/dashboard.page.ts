@@ -3,6 +3,7 @@ import { DataService } from '../services/data/data.service'; // Import your data
 import { AuthService } from '../services/auth/auth.service';
 import { Router } from '@angular/router';
 import * as Highcharts from 'highcharts';
+import { Options } from 'highcharts';
 
 
 @Component({
@@ -11,12 +12,14 @@ import * as Highcharts from 'highcharts';
   styleUrls: ['./dashboard.page.scss']
 })
 export class DashboardPage implements OnInit {
-  userName: string | undefined;
+  username: string | undefined;
   numberOfWarehouses: number | undefined;
   hideHeader = false;
   lastY = 0;
   // Declare other statistic variables
-
+  Highcharts: typeof Highcharts = Highcharts;
+  chartOptions1: Options | undefined;
+  chartOptions2: Options | undefined;
 
   constructor(private router: Router, private dataService: DataService, private authService: AuthService) { }
 
@@ -36,18 +39,19 @@ export class DashboardPage implements OnInit {
  }
   logout() {
     // Call the logout method from the authentication service
-    this.authService.logout();
+   //  this.authService.logout();
     // Redirect the user to the login page
     this.router.navigate(['/home']);
   }
   ngOnInit(): void {
     // Fetch dynamic data from the data service
-    this.userName = this.dataService.getUserName();
+    // this.username = this.dataService.getUserName();
     this.numberOfWarehouses = this.dataService.getNumberOfWarehouses();
     // Fetch other statistics data
   }
+
   highcharts = Highcharts;
-  chartOptions: any = {   
+  linechartOptions: any = {   
      chart: {
         type: "spline"
      },
@@ -93,5 +97,50 @@ export class DashboardPage implements OnInit {
      ]
 
 }
+
+  barchartOptions: any = {
+   title: {
+     text: 'Temperature and Humidity Data'
+   },
+   xAxis: {
+     categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+   },
+   yAxis: {
+     title: {
+       text: 'Value'
+     }
+   },
+   series: [{
+     name: 'Temperature',
+     data: [20, 22, 23, 21, 19, 18, 17]
+   }, {
+     name: 'Humidity',
+     data: [60, 55, 50, 45, 40, 35, 30]
+   }]
+ };
+
+ // Function to handle data selection
+onSelectData(dataType: string): void {
+   // Update chart options based on selected data type
+   switch (dataType) {
+     case 'daily':
+       // Update chart options for daily data
+       this.barchartOptions.xAxis.categories = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+       this.barchartOptions.series[0].data = [20, 22, 23, 21, 19, 18, 17]; // Sample temperature data
+       this.barchartOptions.series[1].data = [60, 55, 50, 45, 40, 35, 30]; // Sample humidity data
+       break;
+     case 'weekly':
+       // Update chart options for weekly data
+       // Sample data for weekly data
+       break;
+     case 'monthly':
+       // Update chart options for monthly data
+       // Sample data for monthly data
+       break;
+     default:
+       break;
+   }
 }
 
+
+}
