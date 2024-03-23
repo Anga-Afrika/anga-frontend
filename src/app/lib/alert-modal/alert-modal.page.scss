@@ -16,7 +16,11 @@ z-index: 1000;
   .hide-header {
     transform: translateY(-100%);
   }
-  ion-title{
+.currents {
+margin-top: 20%;
+}
+
+ion-title{
     color: #508D69;
 }
     ion-icon{
@@ -25,8 +29,3 @@ z-index: 1000;
       ion-button{
         position: relative;
       }
-
-      store {
-        margin-top: 40%;
-  
-    }

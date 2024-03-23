@@ -1,17 +1,55 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>storage</ion-title>
+<ion-header mode="ios">
+  <ion-toolbar style="padding: 0;" [class.hide-header]="hideHeader" >
+          <ion-buttons slot="end">
+            <ion-button (click)="openAlertModal()" tab="alerts" style="position: relative;">
+              <ion-icon name="notifications"></ion-icon>
+              <ion-badge>2</ion-badge>
+            </ion-button>
+                </ion-buttons>
+          <ion-buttons slot="end">
+            <ion-button tab="alerts" style="position: relative;">
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </ion-button>       
+                </ion-buttons>
   </ion-toolbar>
-</ion-header>
+  </ion-header>
+    <ion-app id="main-content">
 
 <ion-content [fullscreen]="true">
-  <!-- <form (ngSubmit)="registerWarehouse()">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" [(ngModel)]="warehouse.name" required>
-    <br>
-    <label for="location">Location:</label>
-    <input type="text" id="location" name="location" [(ngModel)]="warehouse.location" required>
-    <br>
-    <button type="submit">Register Warehouse</button>
-  </form> -->
+  <div class="store">
+  <ion-grid>
+  <ion-list lines="full">
+    <!-- Warehouse Form -->
+    <ion-item>
+      <ion-label position="floating">Warehouse Name</ion-label>
+      <ion-input [(ngModel)]="warehouseName"></ion-input>
+    </ion-item>
+    <!-- Compartment Form -->
+    <ion-item>
+      <ion-label position="floating">Compartment Name</ion-label>
+      <ion-input [(ngModel)]="compartmentName"></ion-input>
+    </ion-item>
+    <!-- Sensor Form -->
+    <ion-item>
+      <ion-label position="floating">Sensor Name</ion-label>
+      <ion-input [(ngModel)]="sensorName"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="store()">Save</ion-button>
+  </ion-list>
+
+  <!-- Display Table -->
+  <ion-list>
+    <ion-item *ngFor="let warehouse of warehouses">
+      <ion-label>{{ warehouse.name }}</ion-label>
+    </ion-item>
+    <ion-item *ngFor="let compartment of compartments">
+      <ion-label>{{ compartment.name }}</ion-label>
+    </ion-item>
+    <ion-item *ngFor="let sensor of sensors">
+      <ion-label>{{ sensor.name }}</ion-label>
+    </ion-item>
+  </ion-list>
+  </ion-grid>
+</div>
 </ion-content>
+</ion-app>

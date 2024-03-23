@@ -1,0 +1,38 @@
+<ion-header mode="ios">
+  <ion-toolbar style="padding: 0;" [class.hide-header]="hideHeader">
+    <ion-title>notifications</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()" tab="alerts" style="position: relative;">
+        <ion-icon name="close-circle-outline" size="medium"></ion-icon>
+      </ion-button>
+          </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-app id="main-content">
+<!-- 
+<ion-header mode="ios">
+  <ion-toolbar style="padding: 0;" [class.hide-header]="hideHeader" >
+    <ion-buttons (click)="logout()" slot="end">
+      <ion-button tab="alerts">
+        <ion-icon name="share-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          
+          <ion-buttons slot="end">
+            <ion-button tab="alerts" style="position: relative;">
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </ion-button>       
+                </ion-buttons>
+  </ion-toolbar>
+  </ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <div>
+  <ion-list>
+    <ion-item *ngFor="let alert of alerts">
+      {{ alert.message }}
+    </ion-item>
+  </ion-list>
+</div>
+</ion-content>
+</ion-app>
