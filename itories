@@ -1,0 +1,54 @@
+[33mcommit 400d0586d9577b7a3853e1a7a32dff7eb5490fab[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: 1ddb0289 42b4ab03
+Author: Steve Muiga <muigastephen14@gmail.com>
+Date:   Wed Mar 20 02:32:59 2024 +0300
+
+    Merge pull request #12 from Anga-Afrika/JWT-authentication
+    
+    Merge branch 'main' of https://github.com/Anga-Afrika/anga-frontend i…
+
+[33mcommit 1ddb0289c82e210ab725b43375b110b15b526823[m
+Merge: 20d5d929 0a4c47ca
+Author: Steve Muiga <muigastephen14@gmail.com>
+Date:   Mon Mar 18 14:53:32 2024 +0300
+
+    Merge pull request #11 from Anga-Afrika/highcharts-work
+    
+    Highcharts work
+
+[33mcommit 0a4c47ca2a2451a34996995da90ca65663534de0[m[33m ([m[1;31morigin/highcharts-work[m[33m)[m
+Merge: d433ec42 44385186
+Author: emuiga <muigastephen14@gmail.com>
+Date:   Mon Mar 18 14:43:37 2024 +0300
+
+    Merge changes from main branch
+
+[33mcommit d433ec42c777c555565577a3bf2eb68d6fa6fd17[m
+Author: emuiga <muigastephen14@gmail.com>
+Date:   Mon Mar 18 13:42:08 2024 +0300
+
+    changes
+
+[33mcommit ad05341c0d0eecc6dcb8269a49d7db081942b42e[m
+Author: emuiga <muigastephen14@gmail.com>
+Date:   Sat Mar 16 23:57:49 2024 +0300
+
+    merge
+
+[33mcommit 20d5d929ee8a5763db9b8ef0260838e137ce5602[m
+Merge: 9afcc0d3 0db4b6b0
+Author: Steve Muiga <muigastephen14@gmail.com>
+Date:   Sat Mar 16 23:51:07 2024 +0300
+
+    Merge pull request #10 from Anga-Afrika/highcharts-work
+    
+    Highcharts work
+
+[33mcommit 9afcc0d357164d51d975fef5b3f53fd6aa1ff9ab[m
+Merge: 99a2c0e6 995b1f18
+Author: Steve Muiga <muigastephen14@gmail.com>
+Date:   Wed Mar 13 00:15:04 2024 +0300
+
+    Merge pull request #9 from Anga-Afrika/signup-auth
+    
+    signup auth working

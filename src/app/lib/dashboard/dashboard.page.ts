@@ -4,7 +4,8 @@ import { AuthService } from '../services/auth/auth.service';
 import { Router } from '@angular/router';
 import * as Highcharts from 'highcharts';
 import { Options } from 'highcharts';
-
+import { ModalController } from '@ionic/angular';
+import { AlertModalPage } from '../alert-modal/alert-modal.page';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,42 +13,32 @@ import { Options } from 'highcharts';
   styleUrls: ['./dashboard.page.scss']
 })
 export class DashboardPage implements OnInit {
-  username: string | undefined;
-  numberOfWarehouses: number | undefined;
   hideHeader = false;
   lastY = 0;
-  // Declare other statistic variables
   Highcharts: typeof Highcharts = Highcharts;
   chartOptions1: Options | undefined;
   chartOptions2: Options | undefined;
+  data: any;
+  fetchedData: any;
 
-  constructor(private router: Router, private dataService: DataService, private authService: AuthService) { }
+
+  constructor(private modalCtrl: ModalController, private router: Router, private dataService: DataService, private authService: AuthService) { }
 
 
-  onScroll(event) {
-   const currentY = event.detail.scrollTop;
-
-   if (currentY > this.lastY) {
-     // Scrolling down
-     this.hideHeader = true;
-   } else {
-     // Scrolling up
-     this.hideHeader = false;
-   }
-
-   this.lastY = currentY;
- }
-  logout() {
-    // Call the logout method from the authentication service
-   //  this.authService.logout();
-    // Redirect the user to the login page
-    this.router.navigate(['/home']);
-  }
   ngOnInit(): void {
-    // Fetch dynamic data from the data service
-    // this.username = this.dataService.getUserName();
-    this.numberOfWarehouses = this.dataService.getNumberOfWarehouses();
-    // Fetch other statistics data
+    this.fetchData();
+  }
+
+  // fetchData() {
+  //   this.dataService.fetchDataFromAPI().subscribe((data: any) => {
+  //     this.fetchedData = data;
+  //   });
+  // }
+
+  fetchData() {
+    this.dataService.fetchTempData(60).subscribe((data: any) => {
+        console.log(data);
+  });
   }
 
   highcharts = Highcharts;
@@ -56,10 +47,7 @@ export class DashboardPage implements OnInit {
         type: "spline"
      },
      title: {
-        text: "Monthly Average Temperature"
-     },
-     subtitle: {
-      //   text: "Source: WorldClimate.com"
+        text: "Sensor Data"
      },
      xAxis:{
         categories:["Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -99,20 +87,30 @@ export class DashboardPage implements OnInit {
 }
 
   barchartOptions: any = {
+    tooltip: {
+      fontColor: "#508D69" //sets the font color of the tooltip
+    },
    title: {
-     text: 'Temperature and Humidity Data'
+     text: 'Sensor Data'
    },
    xAxis: {
-     categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+     categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+     guide: {
+      lineColor: "#508D69"
+    }
    },
    yAxis: {
      title: {
        text: 'Value'
-     }
+     },
+     guide: {
+      lineColor: "#508D69"
+    }
    },
    series: [{
      name: 'Temperature',
-     data: [20, 22, 23, 21, 19, 18, 17]
+     data: [20, 22, 23, 21, 19, 18, 17],
+     lineColor: "#508D69",
    }, {
      name: 'Humidity',
      data: [60, 55, 50, 45, 40, 35, 30]
@@ -142,5 +140,28 @@ onSelectData(dataType: string): void {
    }
 }
 
+//notif suff
+async openAlertModal(){
+  const modal = await this.modalCtrl.create({
+    component:AlertModalPage,
+  });
+  return await modal.present();
+}
 
+
+logout() {
+  this.router.navigate(['/home']);
+}
+//scroll setting
+onScroll(event) {
+  const currentY = event.detail.scrollTop;
+
+  if (currentY > this.lastY) {
+    this.hideHeader = true;
+  } else {
+    this.hideHeader = false;
+  }
+
+  this.lastY = currentY;
+}
 }

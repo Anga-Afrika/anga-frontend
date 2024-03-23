@@ -1,10 +1,5 @@
    <ion-header mode="ios">
       <ion-toolbar style="padding: 0;" [class.hide-header]="hideHeader">
-        <ion-buttons (click)="back()" slot="start">
-            <ion-back-button slot="start" fill="solid" defaultHref="/dashboard" style="color:#508D69">
-              <ion-icon name="chevron-back"></ion-icon>
-            </ion-back-button>
-          </ion-buttons> 
               <ion-buttons slot="end">
                 <ion-button tab="alerts" style="position: relative;">
                   <ion-icon name="notifications"></ion-icon>
@@ -56,7 +51,7 @@
       <ion-label>Warehouse:</ion-label>
       <ion-select interface="popover">
         <ion-select-option>
-          warehouse 
+         {{ warehouses }}
         </ion-select-option>
       </ion-select>
     </ion-item>
@@ -74,7 +69,7 @@
       <ion-label>Sensor ID:</ion-label>
       <ion-select  interface="popover">
         <ion-select-option >
-          sensorID 
+          {{ sensorIDs }} 
         </ion-select-option>
       </ion-select>
     </ion-item>
@@ -86,31 +81,14 @@
   </ion-card>
 
     <ion-grid>
-          <ion-card class="charts">
-            <ion-card-title></ion-card-title>
-            <ion-card-subtitle>
-              <ion-icon name="" size="large"></ion-icon>Humidity
-            </ion-card-subtitle>
-            <ion-card-content>
-                <div id="temperatureChart"></div>
-            </ion-card-content>
-          </ion-card>
-
-          <ion-card class="charts">
-            <ion-card-title></ion-card-title>
-            <ion-card-subtitle>
-              <ion-icon name="" size="large"></ion-icon>Temperature
-            </ion-card-subtitle>
-            <ion-card-content>
-              <div class="pie">
-
-              </div>
-            </ion-card-content>
-          </ion-card>
+          <ion-card>
+            <highcharts-chart [Highcharts]="Highcharts" [options]="tempchartOptions"
+          style = "width: 100%; display: block;"></highcharts-chart>
+      </ion-card>
 
       <ion-card>
-            <highcharts-chart [Highcharts]="Highcharts" [options]="barchartOptions"
-          style = "width: 100%; height: 400px; display: block;"></highcharts-chart>
+            <highcharts-chart [Highcharts]="Highcharts" [options]="humidchartOptions"
+          style = "width: 100%; display: block;"></highcharts-chart>
       </ion-card>
     </ion-grid>
   </ion-content>

@@ -22,7 +22,6 @@ export class LoginPage implements OnInit  {
     ]
   }
   validationFormUser!: FormGroup;
-  // credentialsForm!: FormGroup;
 
 constructor(private router: Router, public formBuilder: FormBuilder, public authService: AuthService) {}
 
@@ -52,18 +51,4 @@ register() {
   });
 }
 
-// LoginUser(value) {
-  // this.router.navigate(['tabs']);
-
-  // console.log("I'm logged in")
-  // // this.router.navigate(['tabs']);
-  // try{
-  //   this.authService.loginFireAuth(value).then(resp =>{
-  //     console.log(resp);
-  //     this.router.navigate(['tabs']);
-  //   })
-  // }catch(err){
-  //   console.log(err);
-  // }
-// }
 }

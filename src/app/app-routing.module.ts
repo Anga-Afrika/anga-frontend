@@ -38,6 +38,10 @@ const routes: Routes = [
     canActivate: [AuthGuardService]
 
   },
+  {
+    path: 'alert-modal',
+    loadChildren: () => import('./lib/alert-modal/alert-modal.module').then( m => m.AlertModalPageModule)
+  },
 // Default route
 
 ];
