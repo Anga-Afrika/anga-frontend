@@ -87,7 +87,7 @@
       },
       {
         "file": "angular.json",
-        "hash": "8202775950737519587"
+        "hash": "3305593802321915513"
       },
       {
         "file": "capacitor.config.ts",
@@ -270,16 +270,20 @@
         "hash": "9838812746653505068"
       },
       {
+        "file": "itories",
+        "hash": "8987626152156661564"
+      },
+      {
         "file": "karma.conf.js",
         "hash": "13719387092471133633"
       },
       {
         "file": "package-lock.json",
-        "hash": "10316552912014681926"
+        "hash": "14309254139881079703"
       },
       {
         "file": "package.json",
-        "hash": "16882818468909395808"
+        "hash": "17069554925629363758"
       },
       {
         "file": "src/app/app-routing.module.ts",
@@ -303,7 +307,7 @@
       },
       {
         "file": "src/app/app.module.ts",
-        "hash": "16273458450279075959"
+        "hash": "9452774191718159082"
       },
       {
         "file": "src/app/home/home-routing.module.ts",
@@ -359,11 +363,11 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.module.ts",
-        "hash": "578972046360144793"
+        "hash": "2977838357349832316"
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.html",
-        "hash": "6847173579896271723"
+        "hash": "16295540626848426812"
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.scss",
@@ -375,7 +379,7 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.ts",
-        "hash": "6445468375702656625"
+        "hash": "4670680418476926160"
       },
       {
         "file": "src/app/lib/gauge/humidity-gauge/humidity-gauge.component.html",
@@ -447,11 +451,11 @@
       },
       {
         "file": "src/app/lib/login-pages/login/login.module.ts",
-        "hash": "18297882848805577998"
+        "hash": "1757491222211013775"
       },
       {
         "file": "src/app/lib/login-pages/login/login.page.html",
-        "hash": "9451284070823015785"
+        "hash": "1357010837854567446"
       },
       {
         "file": "src/app/lib/login-pages/login/login.page.scss",
@@ -463,7 +467,7 @@
       },
       {
         "file": "src/app/lib/login-pages/login/login.page.ts",
-        "hash": "3526942964963369234"
+        "hash": "16500914366108561025"
       },
       {
         "file": "src/app/lib/login-pages/password-change/password-change-routing.module.ts",
@@ -523,7 +527,7 @@
       },
       {
         "file": "src/app/lib/login-pages/register/register.page.html",
-        "hash": "18255688638455721510"
+        "hash": "12243827776213739986"
       },
       {
         "file": "src/app/lib/login-pages/register/register.page.scss",
@@ -535,7 +539,7 @@
       },
       {
         "file": "src/app/lib/login-pages/register/register.page.ts",
-        "hash": "16576331789842921935"
+        "hash": "1939257089928150388"
       },
       {
         "file": "src/app/lib/readings/readings-routing.module.ts",
@@ -547,11 +551,11 @@
       },
       {
         "file": "src/app/lib/readings/readings.page.html",
-        "hash": "4442729289282508195"
+        "hash": "13462237722745239029"
       },
       {
         "file": "src/app/lib/readings/readings.page.scss",
-        "hash": "17580272833632122437"
+        "hash": "439466529593536728"
       },
       {
         "file": "src/app/lib/readings/readings.page.spec.ts",
@@ -559,7 +563,7 @@
       },
       {
         "file": "src/app/lib/readings/readings.page.ts",
-        "hash": "11056102772820948631"
+        "hash": "5049689145263784718"
       },
       {
         "file": "src/app/lib/services/auth/auth-guard.service.spec.ts",
@@ -575,7 +579,7 @@
       },
       {
         "file": "src/app/lib/services/auth/auth.service.ts",
-        "hash": "15013621952761707119"
+        "hash": "10988397941814683965"
       },
       {
         "file": "src/app/lib/services/data/data.service.spec.ts",
@@ -583,7 +587,7 @@
       },
       {
         "file": "src/app/lib/services/data/data.service.ts",
-        "hash": "3772681048658684320"
+        "hash": "551400824156728811"
       },
       {
         "file": "src/app/lib/settings/settings-routing.module.ts",
@@ -687,7 +691,7 @@
       },
       {
         "file": "src/index.html",
-        "hash": "5962093970713772175"
+        "hash": "9824998672033978745"
       },
       {
         "file": "src/main.ts",
