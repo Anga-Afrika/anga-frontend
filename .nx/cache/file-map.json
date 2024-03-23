@@ -287,7 +287,7 @@
       },
       {
         "file": "src/app/app-routing.module.ts",
-        "hash": "6141803223122395028"
+        "hash": "4341611646627512687"
       },
       {
         "file": "src/app/app.component.html",
@@ -315,7 +315,7 @@
       },
       {
         "file": "src/app/home/home.module.ts",
-        "hash": "11132792541070780270"
+        "hash": "10011984637159324757"
       },
       {
         "file": "src/app/home/home.page.html",
@@ -334,28 +334,28 @@
         "hash": "3912256515076868751"
       },
       {
-        "file": "src/app/lib/alerts/alerts-routing.module.ts",
-        "hash": "4423306567241766811"
+        "file": "src/app/lib/alert-modal/alert-modal-routing.module.ts",
+        "hash": "8327369098483262596"
       },
       {
-        "file": "src/app/lib/alerts/alerts.module.ts",
-        "hash": "17973549929360201536"
+        "file": "src/app/lib/alert-modal/alert-modal.module.ts",
+        "hash": "18333535453036160477"
       },
       {
-        "file": "src/app/lib/alerts/alerts.page.html",
-        "hash": "11256238851428544647"
+        "file": "src/app/lib/alert-modal/alert-modal.page.html",
+        "hash": "17742961606760981202"
       },
       {
-        "file": "src/app/lib/alerts/alerts.page.scss",
-        "hash": "3244421341483603138"
+        "file": "src/app/lib/alert-modal/alert-modal.page.scss",
+        "hash": "7380294482170867162"
       },
       {
-        "file": "src/app/lib/alerts/alerts.page.spec.ts",
-        "hash": "16615042685781175823"
+        "file": "src/app/lib/alert-modal/alert-modal.page.spec.ts",
+        "hash": "16615913124097196209"
       },
       {
-        "file": "src/app/lib/alerts/alerts.page.ts",
-        "hash": "4430417025641740453"
+        "file": "src/app/lib/alert-modal/alert-modal.page.ts",
+        "hash": "2687425796871898374"
       },
       {
         "file": "src/app/lib/dashboard/dashboard-routing.module.ts",
@@ -367,11 +367,11 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.html",
-        "hash": "16295540626848426812"
+        "hash": "1153252534195421461"
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.scss",
-        "hash": "14147766565879219103"
+        "hash": "12731451445535249025"
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.spec.ts",
@@ -379,7 +379,7 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.ts",
-        "hash": "4670680418476926160"
+        "hash": "14849308413199278349"
       },
       {
         "file": "src/app/lib/gauge/humidity-gauge/humidity-gauge.component.html",
@@ -479,7 +479,7 @@
       },
       {
         "file": "src/app/lib/login-pages/password-change/password-change.page.html",
-        "hash": "10291812685155843249"
+        "hash": "5845302840602391143"
       },
       {
         "file": "src/app/lib/login-pages/password-change/password-change.page.scss",
@@ -551,7 +551,7 @@
       },
       {
         "file": "src/app/lib/readings/readings.page.html",
-        "hash": "13462237722745239029"
+        "hash": "15069738245574813001"
       },
       {
         "file": "src/app/lib/readings/readings.page.scss",
@@ -587,23 +587,23 @@
       },
       {
         "file": "src/app/lib/services/data/data.service.ts",
-        "hash": "551400824156728811"
+        "hash": "14045111395004802022"
       },
       {
         "file": "src/app/lib/settings/settings-routing.module.ts",
-        "hash": "4281079896590944680"
+        "hash": "10258461313430675419"
       },
       {
         "file": "src/app/lib/settings/settings.module.ts",
-        "hash": "578571550930626449"
+        "hash": "12018576611115876023"
       },
       {
         "file": "src/app/lib/settings/settings.page.html",
-        "hash": "1667356301781047247"
+        "hash": "1709274254463429107"
       },
       {
         "file": "src/app/lib/settings/settings.page.scss",
-        "hash": "3244421341483603138"
+        "hash": "10864974244983759749"
       },
       {
         "file": "src/app/lib/settings/settings.page.spec.ts",
@@ -611,7 +611,7 @@
       },
       {
         "file": "src/app/lib/settings/settings.page.ts",
-        "hash": "11378545068810751355"
+        "hash": "9850585442945767884"
       },
       {
         "file": "src/app/lib/storage/storage-routing.module.ts",
@@ -623,11 +623,11 @@
       },
       {
         "file": "src/app/lib/storage/storage.page.html",
-        "hash": "10505646861697518961"
+        "hash": "15835111645818857359"
       },
       {
         "file": "src/app/lib/storage/storage.page.scss",
-        "hash": "3244421341483603138"
+        "hash": "13894046209899564733"
       },
       {
         "file": "src/app/lib/storage/storage.page.spec.ts",
@@ -635,7 +635,7 @@
       },
       {
         "file": "src/app/lib/storage/storage.page.ts",
-        "hash": "13030885997104941777"
+        "hash": "15564770940506875573"
       },
       {
         "file": "src/app/lib/tabs/tabs-routing.module.ts",
