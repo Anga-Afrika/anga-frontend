@@ -1,0 +1,68 @@
+ion-header{
+background-color: #fff;
+color: black;
+
+}
+  ion-content {
+    --background: #d1d2d4;
+
+}
+    .div-4 {
+      font-size: 24px; /* Adjust the size as needed */
+    }
+  
+
+  ion-list {
+    ion-item {
+      --padding-start: 0;
+      --inner-padding-end: 0;
+    }
+    ion-label {
+      font-weight: bold;
+    }
+    ion-toggle {
+      --padding-end: 0;
+    }
+  }
+  ion-button {
+    margin-top: 20px;
+    background-color: #508D69;
+    
+   
+  }
+
+ 
+  
+  .settings-box {
+    padding: 20px; /* Adjust the padding to increase the size */
+    margin: 10px;
+    background-color: white; /*Set background color */
+    color: #121212;
+    border-radius: 10px; /* Add border radius for rounded corners */
+  }
+  
+  .settings-label {
+    font-size: 18px; /* Adjust the font size */
+    color: rgb(196, 191, 191); /* Set text color */
+  }
+
+  .threshhold-box {
+    padding: 20px; /* Adjust the padding to increase the size */
+    margin: 10px;
+    background-color: white; /*Set background color */
+    color: #121212;
+    border-radius: 10px; /* Add border radius for rounded corners */
+    font-size: 18px; /* Adjust the font size */
+  }
+
+  .threshhold-label {
+    font-size: 18px; /* Adjust the font size */
+    color: rgb(196, 191, 191); /* Set text color */
+  }
+  
+.save-changes{
+color: #508D69;
+background-color: #508D69;
+}  
+
+ 
