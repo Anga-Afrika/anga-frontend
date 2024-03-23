@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginPage } from './lib/login-pages/login/login.page';
 import { RegisterPage } from './lib/login-pages/register/register.page';
 import { AuthGuard } from './lib/guard/auth.guard';
+import { AuthGuardService } from './lib/services/auth/auth-guard.service';
 
 const routes: Routes = [
   {
@@ -33,7 +34,13 @@ const routes: Routes = [
   {
     path: 'tabs',
     loadChildren: () => import('./lib/tabs/tabs.module').then( m => m.TabsPageModule),
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
+    canActivate: [AuthGuardService]
+
+  },
+  {
+    path: 'alert-modal',
+    loadChildren: () => import('./lib/alert-modal/alert-modal.module').then( m => m.AlertModalPageModule)
   },
 // Default route
 

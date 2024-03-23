@@ -12,13 +12,17 @@ import { AlertController, LoadingController, NavController } from '@ionic/angula
 })
 export class RegisterPage  {
   validationMessage = {
-    names: [{type:"required", message:"Please enter your name"}],
     email: [{type:"required", message:"Please enter your email"},
             {type:"pattern", message:"Incorrect format, try again"}],
-    phone: [{type:"required", message:"Please enter your phone no."}],
+    username: [{type:"required", message:"Please enter your name"}],
     password:[
       {type:"required", message:"Please enter your password"},
-      {type:"minlength", message:"Password must be at least 8 characters"}
+      {type:"minlength", message:"Password must be at least 8 characters"},
+      { type: 'similarToUsername', message: 'Password is too similar to the username.' }
+    ],
+    re_password:[
+      {type:"required", message:"Confirm password is required"},
+      {type:"passwordMismatch", message:"Passwords do not match."}
     ],
   }
   validationFormUser!: FormGroup;
@@ -27,39 +31,61 @@ export class RegisterPage  {
 
   ngOnInit() {
     this.validationFormUser = this.formBuilder.group({
-      names : new FormControl('', Validators.compose([
-        Validators.required,
-      ])),
-      phone: new FormControl('',Validators.compose([
-        Validators.required,
-      ])),
       email: new FormControl('',Validators.compose([
         Validators.required,
         Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
       ])),
+      username : new FormControl('', Validators.compose([
+        Validators.required,
+      ])),
       password: new FormControl('', Validators.compose([
         Validators.required,
-        Validators.minLength(8)
-      ]))
-      })
+        Validators.minLength(8),
+        // this.passwordSimilarToUsernameValidator
+      ])),
+      re_password: ['', Validators.required]
+    }, {
+      validators: this.passwordMatchValidator
+    });
   }
-  registerUser(value) {
-    // this.showAlert();
-    try {
-      this.authService.userRegistration(value).then(response => {
-        console.log(response);
-        if (response.user) {
-          this.dismissLoading();  
-          this.router.navigate(['login']);
-        }
-      }, error => {
-        this.dismissLoading();  
-        this.errorLoading(error.message);
-      });
-    } catch (error) {
-      console.log(error);
+
+  // passwordSimilarToUsernameValidator(control) {
+  //   const username = control.root.get('username').value;
+  //   const password = control.value;
+
+  //   // Check if password is too similar to username (example check)
+  //   if (password.toLowerCase().includes(username.toLowerCase())) {
+  //     return { similarToUsername: true };
+  //   }
+
+  //   return null;
+  // }
+
+  
+  passwordMatchValidator(formGroup: FormGroup) {
+    const passwordControl = formGroup.get('password');
+    const confirmPasswordControl = formGroup.get('re_password');
+  
+    if (passwordControl && confirmPasswordControl) {
+      if (passwordControl.value === confirmPasswordControl.value) {
+        confirmPasswordControl.setErrors(null);
+      } else {
+        confirmPasswordControl.setErrors({ passwordMismatch: true });
+      }
     }
   }
+
+  onSubmit() {
+    this.authService.register(this.validationFormUser.value).subscribe();
+  }
+
+
+  register(value) {
+    this.authService.register(this.validationFormUser.value).subscribe((res) => {
+      this.authService.login(this.validationFormUser.value).subscribe();
+  });
+}
+
   
   async errorLoading(message: any) {
     const loading = await this.alertCtrl.create({
@@ -75,13 +101,7 @@ export class RegisterPage  {
     await loading.present();
   }
   
-  // async showAlert() {
-  //   const loading = await this.loadingCtrl.create({
-  //     message: "Please wait..."
-  //   })
-  //    loading.present();
-  // }
-  
+ 
   dismissLoading() {
     if (this.loading) {
       this.loading.dismiss();

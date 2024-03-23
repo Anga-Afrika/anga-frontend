@@ -8,7 +8,7 @@
   <ion-app id="main-content">
   
   <ion-content [fullscreen]="true" class="ion-padding">
-    <form [formGroup]="validationFormUser" (ngSubmit)="LoginUser(validationFormUser.value)">
+    <form [formGroup]="validationFormUser" (ngSubmit)="onSubmit()">
     <div class="container">
     <div class="grid-container">
       <ion-card>
@@ -50,7 +50,11 @@
         <div class="divider">
           <ion-button type="submit" expand="block" class="login-button" color="#FF8911" [disabled]="!validationFormUser.valid">Login</ion-button>
         </div>
-        <div class="divider">
+
+        <!-- <ion-button expand="full" type="button" (click)="register()" [disabled]="!validationFormUser.valid"
+			>Register</ion-button
+		> -->
+        <div >
           <ion-label class="ion-text-center" routerLink="/forgot-password">Forgot Password?</ion-label>
         
         <ion-label class="ion-text-center" routerLink="/register">

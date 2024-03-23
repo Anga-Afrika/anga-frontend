@@ -6,7 +6,7 @@
             </ion-button>
           </ion-buttons>
           <ion-buttons slot="end">
-            <ion-button tab="alerts" style="position: relative;">
+            <ion-button (click)="openAlertModal()" tab="alerts" style="position: relative;">
               <ion-icon name="notifications"></ion-icon>
               <ion-badge>2</ion-badge>
             </ion-button>
@@ -22,7 +22,7 @@
 
 <ion-content [fullscreen]="true" (ionScroll)="onScroll($event)">
   <div class="dashboard">
-    <ion-card class="card2" color="">
+    <ion-card class="card2">
       <ion-card-content>
         <h3><ion-icon name=""></ion-icon> Total Warehouses:
         </h3>
@@ -50,21 +50,17 @@
   <ion-card>
       <highcharts-chart
    [Highcharts] = "highcharts" 
-   [options] = "chartOptions" 
-   style = "width: 100%; height: 400px; display: block;">
-</highcharts-chart>
-  </ion-card>
-
-  <ion-card>
-      <highcharts-chart
-   [Highcharts] = "highcharts" 
-   [options] = "chartOptions" 
+   [options] = "linechartOptions" 
    style = "width: 100%; height: 400px; display: block;">
 </highcharts-chart>
   </ion-card>
   
+  <ion-card>    
+      <highcharts-chart [Highcharts]="Highcharts" [options]="barchartOptions"
+      style = "width: 100%; height: 400px; display: block;"></highcharts-chart>
+  </ion-card>
+  
 </ion-content>
 
+
 </ion-app>
-
-
