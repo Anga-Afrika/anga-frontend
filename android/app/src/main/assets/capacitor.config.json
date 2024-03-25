@@ -1,0 +1,8 @@
+{
+	"appId": "com.ghalaguard.app",
+	"appName": "GhalaGuard",
+	"webDir": "www",
+	"server": {
+		"androidScheme": "https"
+	}
+}

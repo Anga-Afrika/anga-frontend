@@ -86,8 +86,220 @@
         "hash": "1151538777131426085"
       },
       {
+        "file": "android/.gitignore",
+        "hash": "16088808965373471785"
+      },
+      {
+        "file": "android/app/.gitignore",
+        "hash": "3800628318224317187"
+      },
+      {
+        "file": "android/app/build.gradle",
+        "hash": "9083879248754573483"
+      },
+      {
+        "file": "android/app/capacitor.build.gradle",
+        "hash": "1858012904141757260"
+      },
+      {
+        "file": "android/app/proguard-rules.pro",
+        "hash": "16319704539319765030"
+      },
+      {
+        "file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+        "hash": "1280125089554780403"
+      },
+      {
+        "file": "android/app/src/main/AndroidManifest.xml",
+        "hash": "15143078514206279353"
+      },
+      {
+        "file": "android/app/src/main/java/com/ghalaguard/app/MainActivity.java",
+        "hash": "8353833179249165311"
+      },
+      {
+        "file": "android/app/src/main/res/drawable-land-hdpi/splash.png",
+        "hash": "12618218220193540786"
+      },
+      {
+        "file": "android/app/src/main/res/drawable-land-mdpi/splash.png",
+        "hash": "13354102016025079206"
+      },
+      {
+        "file": "android/app/src/main/res/drawable-land-xhdpi/splash.png",
+        "hash": "16928120350772912315"
+      },
+      {
+        "file": "android/app/src/main/res/drawable-land-xxhdpi/splash.png",
+        "hash": "8114284271146720243"
+      },
+      {
+        "file": "android/app/src/main/res/drawable-land-xxxhdpi/splash.png",
+        "hash": "10648225290896133372"
+      },
+      {
+        "file": "android/app/src/main/res/drawable-port-hdpi/splash.png",
+        "hash": "7870574596552345396"
+      },
+      {
+        "file": "android/app/src/main/res/drawable-port-mdpi/splash.png",
+        "hash": "512985810174291431"
+      },
+      {
+        "file": "android/app/src/main/res/drawable-port-xhdpi/splash.png",
+        "hash": "13168839858812363171"
+      },
+      {
+        "file": "android/app/src/main/res/drawable-port-xxhdpi/splash.png",
+        "hash": "1546567578093946022"
+      },
+      {
+        "file": "android/app/src/main/res/drawable-port-xxxhdpi/splash.png",
+        "hash": "7224188242308859997"
+      },
+      {
+        "file": "android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml",
+        "hash": "16602625396055746895"
+      },
+      {
+        "file": "android/app/src/main/res/drawable/ic_launcher_background.xml",
+        "hash": "4055909962711590499"
+      },
+      {
+        "file": "android/app/src/main/res/drawable/splash.png",
+        "hash": "13354102016025079206"
+      },
+      {
+        "file": "android/app/src/main/res/layout/activity_main.xml",
+        "hash": "13540211242698942768"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+        "hash": "16176709064596667284"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+        "hash": "16176709064596667284"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+        "hash": "10700838889768688031"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png",
+        "hash": "15163013499175324231"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+        "hash": "17762064175266230691"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+        "hash": "9342129704159603628"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
+        "hash": "4133705743351324192"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+        "hash": "9039760806353812177"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+        "hash": "15127275078370164788"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png",
+        "hash": "6222172872530160361"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+        "hash": "16696879462706858720"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+        "hash": "5466540626246768150"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png",
+        "hash": "6321943060948364586"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+        "hash": "14088589834205738071"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+        "hash": "18428292913404649045"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
+        "hash": "11484431673195189447"
+      },
+      {
+        "file": "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+        "hash": "1772322197088498798"
+      },
+      {
+        "file": "android/app/src/main/res/values/ic_launcher_background.xml",
+        "hash": "9482601953118464086"
+      },
+      {
+        "file": "android/app/src/main/res/values/strings.xml",
+        "hash": "12396173126428146563"
+      },
+      {
+        "file": "android/app/src/main/res/values/styles.xml",
+        "hash": "17918612613785874663"
+      },
+      {
+        "file": "android/app/src/main/res/xml/file_paths.xml",
+        "hash": "14753087816109454837"
+      },
+      {
+        "file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+        "hash": "11856600006954306230"
+      },
+      {
+        "file": "android/build.gradle",
+        "hash": "15247024166514751308"
+      },
+      {
+        "file": "android/capacitor.settings.gradle",
+        "hash": "4339195147533351513"
+      },
+      {
+        "file": "android/gradle.properties",
+        "hash": "10624656307076585991"
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.jar",
+        "hash": "13643854122011606232"
+      },
+      {
+        "file": "android/gradle/wrapper/gradle-wrapper.properties",
+        "hash": "10340632815092109200"
+      },
+      {
+        "file": "android/gradlew",
+        "hash": "9896656627243825026"
+      },
+      {
+        "file": "android/gradlew.bat",
+        "hash": "8837338129170646035"
+      },
+      {
+        "file": "android/settings.gradle",
+        "hash": "426215723856156424"
+      },
+      {
+        "file": "android/variables.gradle",
+        "hash": "9467210284462474397"
+      },
+      {
         "file": "angular.json",
-        "hash": "3305593802321915513"
+        "hash": "747471088932961508"
       },
       {
         "file": "capacitor.config.ts",
@@ -279,11 +491,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "14309254139881079703"
+        "hash": "13101934702828561279"
       },
       {
         "file": "package.json",
-        "hash": "17069554925629363758"
+        "hash": "1513255707340055315"
       },
       {
         "file": "src/app/app-routing.module.ts",
@@ -367,7 +579,7 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.html",
-        "hash": "1153252534195421461"
+        "hash": "14953267528431751314"
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.scss",
@@ -379,7 +591,7 @@
       },
       {
         "file": "src/app/lib/dashboard/dashboard.page.ts",
-        "hash": "14849308413199278349"
+        "hash": "12860903168044940934"
       },
       {
         "file": "src/app/lib/gauge/humidity-gauge/humidity-gauge.component.html",
@@ -467,7 +679,7 @@
       },
       {
         "file": "src/app/lib/login-pages/login/login.page.ts",
-        "hash": "16500914366108561025"
+        "hash": "16691954097186527812"
       },
       {
         "file": "src/app/lib/login-pages/password-change/password-change-routing.module.ts",
@@ -551,7 +763,7 @@
       },
       {
         "file": "src/app/lib/readings/readings.page.html",
-        "hash": "15069738245574813001"
+        "hash": "14734183348809530519"
       },
       {
         "file": "src/app/lib/readings/readings.page.scss",
@@ -563,7 +775,7 @@
       },
       {
         "file": "src/app/lib/readings/readings.page.ts",
-        "hash": "5049689145263784718"
+        "hash": "16879558191262505349"
       },
       {
         "file": "src/app/lib/services/auth/auth-guard.service.spec.ts",
@@ -579,7 +791,7 @@
       },
       {
         "file": "src/app/lib/services/auth/auth.service.ts",
-        "hash": "10988397941814683965"
+        "hash": "8898788936485072292"
       },
       {
         "file": "src/app/lib/services/data/data.service.spec.ts",
@@ -587,7 +799,7 @@
       },
       {
         "file": "src/app/lib/services/data/data.service.ts",
-        "hash": "14045111395004802022"
+        "hash": "16957642347268485381"
       },
       {
         "file": "src/app/lib/settings/settings-routing.module.ts",
@@ -599,11 +811,11 @@
       },
       {
         "file": "src/app/lib/settings/settings.page.html",
-        "hash": "1709274254463429107"
+        "hash": "14617434481152410474"
       },
       {
         "file": "src/app/lib/settings/settings.page.scss",
-        "hash": "10864974244983759749"
+        "hash": "3430172643831648768"
       },
       {
         "file": "src/app/lib/settings/settings.page.spec.ts",
@@ -611,7 +823,7 @@
       },
       {
         "file": "src/app/lib/settings/settings.page.ts",
-        "hash": "9850585442945767884"
+        "hash": "7507194492666100650"
       },
       {
         "file": "src/app/lib/storage/storage-routing.module.ts",
@@ -619,15 +831,15 @@
       },
       {
         "file": "src/app/lib/storage/storage.module.ts",
-        "hash": "601986302794066360"
+        "hash": "18047270525318420588"
       },
       {
         "file": "src/app/lib/storage/storage.page.html",
-        "hash": "15835111645818857359"
+        "hash": "10716895992818126726"
       },
       {
         "file": "src/app/lib/storage/storage.page.scss",
-        "hash": "13894046209899564733"
+        "hash": "1868014125018336060"
       },
       {
         "file": "src/app/lib/storage/storage.page.spec.ts",
@@ -635,7 +847,7 @@
       },
       {
         "file": "src/app/lib/storage/storage.page.ts",
-        "hash": "15564770940506875573"
+        "hash": "6239447306244052398"
       },
       {
         "file": "src/app/lib/tabs/tabs-routing.module.ts",
