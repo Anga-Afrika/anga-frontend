@@ -1,10 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { AlertModalPage } from '../alert-modal/alert-modal.page';
+import { DataService } from '../services/data/data.service';
+import { ViewEncapsulation } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+export interface Data {
+  movies: string;
+}
 @Component({
   selector: 'app-storage',
   templateUrl: './storage.page.html',
   styleUrls: ['./storage.page.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class StoragePage implements OnInit {
   warehouseName!: string;
@@ -16,12 +23,20 @@ export class StoragePage implements OnInit {
 
   hideHeader = false;
   lastY = 0;
-
-  constructor(private modalCtrl: ModalController) { }
+  
+  constructor(private http: HttpClient, private modalCtrl: ModalController, private dataService: DataService) {}
 
   ngOnInit() {
   }
 
+  
+
+
+  fetchWarehouses(): void {
+    this.dataService.fetchWarehouses().subscribe(data => {
+      this.warehouses = data;
+    });
+  }
 
   store() {
     if (this.warehouseName) {

@@ -32,6 +32,9 @@
               }
             ],
             "styles": [
+              "./node_modules/@swimlane/ngx-datatable/index.css",
+              "./node_modules/@swimlane/ngx-datatable/themes/material.css",
+              "./node_modules/@swimlane/ngx-datatable/assets/icons.css",
               "@angular/material/prebuilt-themes/purple-green.css",
               "src/theme/variables.scss",
               "src/global.scss"

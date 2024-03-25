@@ -1638,13 +1638,22 @@
         "hash": "sha512-+j7a5c253RfKh8iABBhywc8NSfP5LURe7Uh4qpsh6jc+aLJguvmIUBdjSdEMQv2bENrCR5MfRdjGo7vzS/ob7w=="
       }
     },
+    "npm:@capacitor/android": {
+      "type": "npm",
+      "name": "npm:@capacitor/android",
+      "data": {
+        "version": "5.7.4",
+        "packageName": "@capacitor/android",
+        "hash": "sha512-9ETwrCaLaimLHbwGpgfsPS9cHcPMFLmKFdlYsFsYIusMO6aOrcQTA9Q4xVAkr55ava4Wk+pVRniRYsekrbOLdw=="
+      }
+    },
     "npm:@capacitor/cli": {
       "type": "npm",
       "name": "npm:@capacitor/cli",
       "data": {
-        "version": "5.7.2",
+        "version": "5.7.4",
         "packageName": "@capacitor/cli",
-        "hash": "sha512-dTW48klx39Mm2twkRU5pHw7tFRGtGk80fw5psopmbx8Ep5FG08HprqnwK5DXsFPhgJaC+ax4VDwmFCvb8uAGFA=="
+        "hash": "sha512-Cn7ndfMHWfMT+A/wRoeac4/mAxZWNTlZoD1Mn7UQyVV+iGxZB2JpS9omqha7gBN4xrAuTi/X9FqkzrmR+1V96A=="
       }
     },
     "npm:commander@9.5.0": {
@@ -1804,9 +1813,9 @@
       "type": "npm",
       "name": "npm:@capacitor/core",
       "data": {
-        "version": "5.7.2",
+        "version": "5.7.4",
         "packageName": "@capacitor/core",
-        "hash": "sha512-/OUtfINmk7ke32VtKIHRAy8NlunbeK+aCqCHOS+fvtr7nUsOJXPkYgbgqZp/CWXET/gSK1xxMecaVBzpE98UKA=="
+        "hash": "sha512-iZBgvx3o4amzKv5ttA+QHB6i7cxK+/mYpCQd1tnSdipg6ZkvfBhg1HkzhEqHk+I7MNur+QwgYDZho9+ycHRwOw=="
       }
     },
     "npm:@capacitor/ios": {
@@ -3814,6 +3823,15 @@
         "version": "4.12.5",
         "packageName": "@stencil/core",
         "hash": "sha512-vSyFjY7XSEx0ufa9SebOd437CvnneaTXlCpuGDhjUDxAjGBlu6ie5qHyubobVGBth//aErc6wZPHc6W75Vp3iQ=="
+      }
+    },
+    "npm:@swimlane/ngx-datatable": {
+      "type": "npm",
+      "name": "npm:@swimlane/ngx-datatable",
+      "data": {
+        "version": "20.1.0",
+        "packageName": "@swimlane/ngx-datatable",
+        "hash": "sha512-oHnnx1QRNmv10l5UME13v5JP3M3GesM9K3QH6TRYo2C7UbbhY7vL5EZ4HGqcvtMMW4FOzqNOSltE++IVL99F3g=="
       }
     },
     "npm:@tufjs/canonical-json": {
@@ -14497,6 +14515,11 @@
       "type": "static"
     },
     {
+      "source": "npm:@capacitor/android",
+      "target": "npm:@capacitor/core",
+      "type": "static"
+    },
+    {
       "source": "npm:@capacitor/cli",
       "target": "npm:@ionic/cli-framework-output",
       "type": "static"
@@ -19064,6 +19087,31 @@
     {
       "source": "npm:@sigstore/verify",
       "target": "npm:@sigstore/protobuf-specs",
+      "type": "static"
+    },
+    {
+      "source": "npm:@swimlane/ngx-datatable",
+      "target": "npm:@angular/common",
+      "type": "static"
+    },
+    {
+      "source": "npm:@swimlane/ngx-datatable",
+      "target": "npm:@angular/core",
+      "type": "static"
+    },
+    {
+      "source": "npm:@swimlane/ngx-datatable",
+      "target": "npm:@angular/platform-browser",
+      "type": "static"
+    },
+    {
+      "source": "npm:@swimlane/ngx-datatable",
+      "target": "npm:rxjs",
+      "type": "static"
+    },
+    {
+      "source": "npm:@swimlane/ngx-datatable",
+      "target": "npm:tslib",
       "type": "static"
     },
     {

@@ -1,4 +1,4 @@
-import { Component, OnInit, computed, signal } from '@angular/core';
+import { Component, OnInit, computed, effect, signal, ChangeDetectorRef } from '@angular/core';
 import { Router } from "@angular/router";
 import { TemperatureGaugeComponent } from 'src/app/lib/gauge/temperature-gauge/temperature-gauge.component';
 import { HumidityGaugeComponent } from 'src/app/lib/gauge/humidity-gauge/humidity-gauge.component';
@@ -89,31 +89,15 @@ export class ReadingsPage {
   selectedCompartment: string | null = null;
   selectedSensorID: string | null = null;
 
-  onWarehouseChange() {
-    // Simulate fetching compartments based on the selected warehouse
-    this.dataService.getCompartmentData().then((response)=>{
-      console.log(response)
-    //   this.compartments = response.map((data: { Compartment : any; })=>data.Compartment)
-    })
-    // this.compartments = ['Compartment 1', 'Compartment 2', 'Compartment 3'];
-    // this.selectedCompartment = null;
-    this.selectedSensorID = null;
-  }
-
-  onCompartmentChange() {
-    // Simulate fetching sensor IDs based on the selected compartment
-    this.dataService.getCompartmentData().then((response)=>{
-      console.log(response)
-    //   this.sensorIDs = response.map((data: { DeviceID: any; })=>data.DeviceID)
-    })
-    // this.sensorIDs = ['Sensor ID 1', 'Sensor ID 2', 'Sensor ID 3'];
-    this.selectedSensorID = null;
-  }
-  constructor(private dataService: DataService, private router: Router) {}
+  currentTemp = signal(0);
+  currentHumid = signal(0);
+  constructor(private dataService: DataService, private router: Router, private cdr: ChangeDetectorRef) {}
 
   ngOnInit(): void {
     this.fetchSensors();
     this.fetchData();
+    this.cdr.detectChanges();
+    setInterval(() => this.fetchData(), 300000);
   }
 
   fetchSensors() {
@@ -123,9 +107,22 @@ export class ReadingsPage {
   }
   
   fetchData() {
-    this.dataService.fetchTempData(7).subscribe((data: any) => {
-        console.log(data);
+    this.dataService.fetchTempData(60).subscribe((data: any) => {
+      const readings= Object.values(data);
+      const value = readings.length-1;
+      // console.log(data[value],value,readings[value]);
+        this.currentTemp.set(Number(value)) ;
+        this.cdr.detectChanges();
+        console.log(this.warehouses.length);
   });
+  this.dataService.fetchHumidData(7).subscribe((data: any) => {
+    const readings= Object.values(data);
+      const value = readings.length-1;
+      // console.log(data[value],value,readings[value]);
+        this.currentHumid.set(Number(value)) ;
+        this.cdr.detectChanges();
+});
+this.cdr.detectChanges();
   }
   onScroll(event) {
     const currentY = event.detail.scrollTop;
@@ -172,7 +169,7 @@ export class ReadingsPage {
     yAxis: {
         min: -5,
         max: 28,
-        tickPixelInterval: 5,
+        tickPixelInterval: 10,
         tickPosition: 'inside',
         tickColor:  '#FFFFFF',
         tickLength: 20,
@@ -205,7 +202,7 @@ export class ReadingsPage {
 
     series: [{
         name: 'RH',
-        data: [73],
+        data: [this.currentTemp],
         tooltip: {
             valueSuffix: '°C'
         },
@@ -236,27 +233,6 @@ export class ReadingsPage {
     }]
 
 };
-
-  // barchartOptions: any = {
-  //   title: {
-  //     text: 'Temperature and Humidity Data'
-  //   },
-  //   xAxis: {
-  //     categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-  //   },
-  //   yAxis: {
-  //     title: {
-  //       text: 'Value'
-  //     }
-  //   },
-  //   series: [{
-  //     name: 'Temperature',
-  //     data: [20, 22, 23, 21, 19, 18, 17]
-  //   }, {
-  //     name: 'Humidity',
-  //     data: [60, 55, 50, 45, 40, 35, 30]
-  //   }]
-  // };
  
 
 
@@ -301,32 +277,32 @@ export class ReadingsPage {
         },
         lineWidth: 0,
         plotBands: [{
-            from: 40,
+            from: 0,
             to: 50,
             color: '#55BF3B', // green
-            thickness: 10
+            thickness: 5
         }, {
             from: 50,
             to: 65,
             color: '#DDDF0D', // yellow
-            thickness: 10
+            thickness: 5
         }, {
             from: 65,
             to: 100,
             color: '#DF5353', // red
-            thickness: 10
+            thickness: 5
         },
         {
           from: 0,
           to: 40,
           color: '#DF5353', // red
-          thickness: 10
+          thickness: 5
       }]
     },
 
     series: [{
         name: 'RH',
-        data: [73],
+        data: [this.currentHumid],
         tooltip: {
             valueSuffix: '%'
         },
@@ -358,31 +334,69 @@ export class ReadingsPage {
 
 };
 
-
-  // Function to handle data selection
-//  onSelectData(dataType: string): void {
-//     // Update chart options based on selected data type
-//     switch (dataType) {
-//       case 'daily':
-//         // Update chart options for daily data
-//         this.barchartOptions.xAxis.categories = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-//         this.barchartOptions.series[0].data = [20, 22, 23, 21, 19, 18, 17]; // Sample temperature data
-//         this.barchartOptions.series[1].data = [60, 55, 50, 45, 40, 35, 30]; // Sample humidity data
-//         break;
-//       case 'weekly':
-//         // Update chart options for weekly data
-//         // Sample data for weekly data
-//         break;
-//       case 'monthly':
-//         // Update chart options for monthly data
-//         // Sample data for monthly data
-//         break;
-//       default:
-//         break;
-//     }
-//  }
+ 
+getData(){
+    
 }
-function onSelectData(dataType: any, string: any) {
-  throw new Error('Function not implemented.');
+sensorData: any[] = [
+  {
+    sensorID: 'Sensor 1',
+    warehouse: 'Warehouse A',
+    compartment: 'Compartment 1',
+    timestamp: '2023-08-21 10:00:00',
+    temperature: '25°C',
+    humidity: '60%',
+  },
+  {
+    sensorID: 'Sensor 2',
+    warehouse: 'Warehouse B',
+    compartment: 'Compartment 2',
+    timestamp: '2023-08-21 10:00:00',
+    temperature: '20°C',
+    humidity: '40%',
+  },
+  {
+    sensorID: 'Sensor 3',
+    warehouse: 'Warehouse C',
+    compartment: 'Compartment 3',
+    timestamp: '2023-08-21 10:00:00',
+    temperature: '20°C',
+    humidity: '40%',
+  },
+  {
+    sensorID: 'Sensor 4',
+    warehouse: 'Warehouse D',
+    compartment: 'Compartment 4',
+    timestamp: '2023-08-21 10:00:00',
+    temperature: '20°C',
+    humidity: '40%',
+  },
+  {
+    sensorID: 'Sensor 5',
+    warehouse: 'Warehouse E',
+    compartment: 'Compartment 5',
+    timestamp: '2023-08-21 10:00:00',
+    temperature: '20°C',
+    humidity: '40%',
+  },
+];
+
+onWarehouseChange() {
+  this.dataService.getCompartmentData().then((response: any)=>{
+    console.log(response)
+    this.compartments = (response as Array<any>).map((data: { Compartment : any; })=>data.Compartment)
+  })
+  this.compartments = ['Apples 1', 'Apples 2', 'Lettuce 1'];
+  this.selectedCompartment = null;
+  this.selectedSensorID = null;
 }
 
+onCompartmentChange() {
+  this.dataService.getCompartmentData().then((response: any)=>{
+    console.log(response)
+    this.sensorIDs = (response as Array<any>).map((data: { DeviceID: any; })=>data.DeviceID)
+  })
+  this.sensorIDs = ['Sensor 11', 'Sensor 12', 'Sensor 13'];
+  this.selectedSensorID = null;
+}
+}

@@ -20,14 +20,13 @@
     <div class="currents">
       <ion-card class="card1">
         <ion-card-content>
-          <h3><ion-icon name=""></ion-icon> Current Humidity:
-            
+          <h3><ion-icon name=""></ion-icon> Current Humidity: {{ this.currentHumid() }} %
           </h3>
         </ion-card-content>
       </ion-card>
       <ion-card class="card2">
         <ion-card-content>
-          <h3><ion-icon name=""></ion-icon> Current Temperature:
+          <h3> Current Temperature:  {{ this.currentTemp()  }} &#8451;
           </h3>
         </ion-card-content>
       </ion-card>
@@ -40,42 +39,43 @@
       </ion-card>
     </div>
     
-    <ion-card class="filter" style="background-color:#fff">
+    <ion-card class="filter">
       <ion-list>
       <ion-item>
-        <p>Filter Options</p>
+        <p>Filter Sensor</p>
       </ion-item>
     </ion-list>
 
+
     <ion-item>
       <ion-label>Warehouse:</ion-label>
-      <ion-select interface="popover">
-        <ion-select-option>
-         {{ warehouses }}
+      <ion-select [(ngModel)]="selectedWarehouse" (ionChange)="onWarehouseChange()" interface="popover">
+        <ion-select-option *ngFor="let warehouse of warehouses" [value]="warehouse">
+          {{ warehouse }}
         </ion-select-option>
       </ion-select>
     </ion-item>
 
-    <ion-item >
+    <ion-item *ngIf="selectedWarehouse">
       <ion-label>Compartment:</ion-label>
-      <ion-select  interface="popover">
-        <ion-select-option >
-          compartment 
+      <ion-select [(ngModel)]="selectedCompartment" (ionChange)="onCompartmentChange()" interface="popover">
+        <ion-select-option *ngFor="let compartment of compartments" [value]="compartment">
+          {{ compartment }}
         </ion-select-option>
       </ion-select>
     </ion-item>
 
-    <ion-item>
+    <ion-item *ngIf="selectedCompartment">
       <ion-label>Sensor ID:</ion-label>
-      <ion-select  interface="popover">
-        <ion-select-option >
-          {{ sensorIDs }} 
+      <ion-select [(ngModel)]="selectedSensorID" interface="popover">
+        <ion-select-option *ngFor="let sensorID of sensorIDs" [value]="sensorID">
+          {{ sensorID }}
         </ion-select-option>
       </ion-select>
     </ion-item>
 
-    <ion-item>
-      <p> selectedWarehouse, selectedCompartment, selectedSensorID</p>
+    <ion-item *ngIf="selectedWarehouse && selectedCompartment && selectedSensorID">
+      <p>{{ selectedWarehouse }}, {{ selectedCompartment }}, {{ selectedSensorID }}</p>
     </ion-item>
 
   </ion-card>

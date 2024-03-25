@@ -1,19 +1,22 @@
 <ion-header mode="ios">
-  <ion-toolbar>
-    <ion-title font-size="30">Settings</ion-title>
+  <ion-toolbar style="padding: 0;" [class.hide-header]="hideHeader">
+          <ion-buttons slot="end">
+            <ion-button tab="alerts" style="position: relative;">
+              <ion-icon name="notifications"></ion-icon>
+              <ion-badge>2</ion-badge>
+            </ion-button>
+                </ion-buttons>
+          <ion-buttons slot="end">
+            <ion-button tab="alerts" style="position: relative;">
+              <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </ion-button>       
+                </ion-buttons>
   </ion-toolbar>
-</ion-header>
-
+  </ion-header>
 <ion-app id="main-content">
    
-
-   
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
  
-   
-    
-
-      <ion-list> 
         <div class="threshhold-box">
       <ion-label class="threshhold-label">Temperature Settings</ion-label>
 
@@ -21,34 +24,36 @@
   <ion-grid>
     <ion-row>
       <ion-col size="6">
-      <ion-button color="green"  expand="block" (click)="increaseThreshold()" >+</ion-button>
-      </ion-col>
-      <ion-col size="6">
-  <ion-button color="green" expand="block" (click)="decreaseThreshold()">-</ion-button>
+  <ion-item>
+    <ion-label position="floating">Threshold</ion-label>
+    <ion-input type="number" [(ngModel)]="temperature"></ion-input>
+  </ion-item>
   </ion-col>
 </ion-row>
 </ion-grid>
 
-   <p >Current Temp. Threshold: {{ temperatureThreshold }}</p>
+   <p type="number" [(ngModel)]="threshold" >Current Temp. Threshold: {{ temperature }}</p>
 
   <ion-label class="threshhold-label" >Humidity Settings</ion-label>
   
   <ion-grid>
     <ion-row>
       <ion-col size="6">
-  <ion-button color="green"  expand="block" (click)="increaseHumidity()">+</ion-button>
-  </ion-col>
-  <ion-col size="6">
-  <ion-button color="green" expand="block" (click)="decreaseHumidity()" >-</ion-button>
+        <ion-item>
+          <ion-label position="floating">Threshold</ion-label>
+          <ion-input type="number" [(ngModel)]="humidity"></ion-input>
+        </ion-item>
 </ion-col>
 </ion-row>
 </ion-grid>
-<p >Current humidity Threshold: {{ humidityThreshold }}</p>
+<p >Current humidity Threshold: {{ humidity }}</p>
 </div>
   
 <div class="save-changes">
-  <ion-button expand="full"  >Save Changes</ion-button>
+  <ion-button style="
+  background-color: #508D69;" expand="full" (click)="setThresholds()">Save Changes</ion-button>
 </div>
-  <ion-button expand="full"  >Log Out</ion-button>
  
+</ion-content>
+</ion-app>
   

@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
+import { DataService } from '../services/data/data.service';
 
 @Component({
   selector: 'app-settings',
@@ -9,38 +10,23 @@ import { Component, OnInit } from '@angular/core';
 
 
   export class SettingsPage implements OnInit{
-    temperatureThreshold: number = 25;
-    humidityThreshold: number = 70
+    temperature: number = 25;
+    humidity: number = 70;
     darkMode = false;
     hideHeader=false;
     lastY= 0;
+    threshold!: number;
 
-     constructor() {}
+     constructor(private http: HttpClient, private dataService: DataService) {}
 
   ngOnInit() {}
 
-  toggleDarkMode() {
-    this.darkMode = !this.darkMode;
-    document.body.classList.toggle('dark', this.darkMode);
+  setThresholds() {
+    this.dataService.updateThresholds(this.humidity, this.temperature).subscribe((data: any) => {
+        console.log(data);
+  });
   }
-  
-    increaseThreshold() {
-      this.temperatureThreshold++;
-    }
-  
-    decreaseThreshold() {
-      this.temperatureThreshold--;
-      
-    }
-
-    increaseHumidity() {
-      this.humidityThreshold++;
-    }
-  
-    decreaseHumidity() {
-      this.humidityThreshold--;
-      
-    }
+   
   }
   
 
