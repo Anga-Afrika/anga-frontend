@@ -280,24 +280,18 @@ this.cdr.detectChanges();
             from: 0,
             to: 50,
             color: '#55BF3B', // green
-            thickness: 5
+            thickness: 10
         }, {
             from: 50,
             to: 65,
             color: '#DDDF0D', // yellow
-            thickness: 5
+            thickness: 10
         }, {
             from: 65,
             to: 100,
             color: '#DF5353', // red
-            thickness: 5
-        },
-        {
-          from: 0,
-          to: 40,
-          color: '#DF5353', // red
-          thickness: 5
-      }]
+            thickness: 10
+        }]
     },
 
     series: [{
