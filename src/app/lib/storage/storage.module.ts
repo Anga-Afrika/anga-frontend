@@ -7,13 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { StoragePageRoutingModule } from './storage-routing.module';
 
 import { StoragePage } from './storage.page';
-
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    StoragePageRoutingModule
+    StoragePageRoutingModule,
+    NgxDatatableModule
   ],
   declarations: [StoragePage]
 })
