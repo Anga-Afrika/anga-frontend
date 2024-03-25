@@ -21,21 +21,26 @@ export class DashboardPage implements OnInit {
   data: any;
   fetchedData: any;
 
+  warehouses: string[] = ['Warehouse A', 'Warehouse B', 'Warehouse C'];
+  compartments: string[] = [];
+  sensorIDs: string[] = [];
 
   constructor(private modalCtrl: ModalController, private router: Router, private dataService: DataService, private authService: AuthService) { }
 
 
   ngOnInit(): void {
-    this.fetchData();
+    this.fetchTempData();
+    this.fetchHumidData();
   }
 
-  // fetchData() {
-  //   this.dataService.fetchDataFromAPI().subscribe((data: any) => {
-  //     this.fetchedData = data;
-  //   });
-  // }
+  fetchHumidData() {
+    this.dataService.fetchHumidData(60).subscribe((data: any) => {
+      // this.fetchedData = data;
+      console.log(data);
+    });
+  }
 
-  fetchData() {
+  fetchTempData() {
     this.dataService.fetchTempData(60).subscribe((data: any) => {
         console.log(data);
   });
@@ -117,28 +122,6 @@ export class DashboardPage implements OnInit {
    }]
  };
 
- // Function to handle data selection
-onSelectData(dataType: string): void {
-   // Update chart options based on selected data type
-   switch (dataType) {
-     case 'daily':
-       // Update chart options for daily data
-       this.barchartOptions.xAxis.categories = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-       this.barchartOptions.series[0].data = [20, 22, 23, 21, 19, 18, 17]; // Sample temperature data
-       this.barchartOptions.series[1].data = [60, 55, 50, 45, 40, 35, 30]; // Sample humidity data
-       break;
-     case 'weekly':
-       // Update chart options for weekly data
-       // Sample data for weekly data
-       break;
-     case 'monthly':
-       // Update chart options for monthly data
-       // Sample data for monthly data
-       break;
-     default:
-       break;
-   }
-}
 
 //notif suff
 async openAlertModal(){

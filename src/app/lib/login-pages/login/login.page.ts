@@ -41,7 +41,6 @@ constructor(private router: Router, public formBuilder: FormBuilder, public auth
 
 onSubmit() {
   this.authService.login(this.validationFormUser.value).subscribe();
-  // this.router.navigate(['tabs']);
 }
 
 register() {

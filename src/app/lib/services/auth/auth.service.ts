@@ -5,7 +5,7 @@ import { Platform, AlertController } from '@ionic/angular';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Storage } from '@ionic/storage';
 import { environment } from 'src/environments/environment';
-import { tap, catchError } from 'rxjs/operators';
+import { tap, catchError, shareReplay } from 'rxjs/operators';
 import { BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
 
@@ -66,6 +66,7 @@ export class AuthService {
             
               login(credentials) {
                 return this.http.post(`${this.BASE_API}${this.LOGIN_ENDPOINT}`, credentials).pipe(
+                  shareReplay(),
                   tap((res) => {
                     this.storage.set(TOKEN_KEY, res['token']);
                     this.user = this.helper.decodeToken(res['token']);
